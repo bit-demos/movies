@@ -1,0 +1,24 @@
+---
+labels: ['react', 'typescript', 'input', 'text', 'search']
+description: 'A basic search box component with input and search button'
+---
+
+import {useState} from 'react';
+import { SearchBoxWithButton } from './index';
+
+A basic input component, which utilises both input and button components, and exposes a onClicked prop function which it calls with the input value
+
+Basic example:
+Using the component with an input placeholder, button Text and alert on click:
+
+```js live
+() => {
+  return (
+    <SearchBoxWithButton 
+        inputPlaceholder="user-defined placeholder" 
+        buttonText="user-defined Button text"
+        onClicked={() => alert("button was clicked!")}
+    />
+  )
+};
+```
