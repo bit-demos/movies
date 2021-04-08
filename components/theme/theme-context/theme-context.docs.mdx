@@ -1,0 +1,32 @@
+---
+description: Component 'context' wrapper for providing all wrapped components with a styling theme
+labels: ['design', 'system', 'css', 'theme']
+---
+
+import cs from 'classnames';
+import styles from '@teambit/movie-demo.styling.bootstrap-override';
+import Button from '@teambit/movie-demo.base-ui.button';
+import { ThemeContext } from './index';
+
+This theme context component is for wrapping component groups or even entire apps in a 'context' in which a theme is provided which acts on CSS classes for which the theme is aimed.
+
+In this case, the default theme provided by this Theme Context component is a [basic bootstrap-compatible theme](https://bit.dev/teambit/use-case-examples/theme/base-theme).
+The theme can be overriden by providing an alternate them to the Theme Context component
+
+For instance, here is the same component with and without the theme context.
+
+```js live
+    <div>
+        <Button >no theme, basic styling</Button>
+    </div>
+
+```
+
+```js live
+    <div>
+        <ThemeContext>
+            <Button className={cs(styles["btn"], styles["btn-primary"])}>using theme defined by ThemeContext</Button>
+        </ThemeContext>
+    </div>
+
+```
