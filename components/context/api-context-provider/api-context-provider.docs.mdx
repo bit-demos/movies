@@ -1,0 +1,12 @@
+---
+description: A context provider to wrap an app that wishes to use the react-request-hook api provider
+labels: ['api', 'context', 'provider', 'axios']
+---
+
+This API provider wraps the [React Request Hook](https://github.com/schettino/react-request-hook)  (credit to [Matheus Schettino](https://github.com/schettino))
+for ease of use in applications which want to create an api provider based on that hook.
+
+The API provider takes in an axios instance as the API gateway (the hook works with axios only) and creates an api context which can be consumed 
+down the component tree by anyone who subscribes to the context.
+
+
