@@ -1,0 +1,42 @@
+---
+description: A standard React component development environment with configurable providers
+labels: ['react', 'typescript', 'env', 'extension', 'example', 'providers', 'context']
+---
+
+## Overview
+
+A standard React development environment for building and rendering modular and reusable MFEs.
+
+### Usage instructions
+
+Create a **variant** in project's `workspace.json` file.  
+Set this extension as the variant's environment, for instance for the variant "any components in the 'ui' namespace":
+
+```json
+{
+   "teambit.workspace/variants": {
+     "{ui/*}": {
+       "teambit.use-case-examples/extensions/with-preview-react": {}
+     }
+   }
+}
+```
+
+### Theming
+This environment adds the design theme [Theme](https://bit.dev/teambit/use-case-examples/design/theme-context) to all compositions of the components that use this example env.
+
+### Data fetching
+This environment can configure the bit.dev/local UI API gateway for all compositions by default.
+You configure your API by adding a default config in the .aspect.ts file, and then applying the config inside the value object when applying 
+the environment to components via workspace.json (see Usage Instructions above)
+
+### Compilation
+By default, Component compilation is done with the TypeScript compiler. Target format is `ES2015` which
+supports execution from both NodeJS and browser runtimes for server-side rendering.
+
+### Testing
+Component testing is done through [Jest](https://jestjs.io/) with the default configuration from the `teambit.react/react` environment, and some overrides which are in the jest/jest.config.json file in this environment 
+
+### Extend
+This component development environment can be easily extended. Just add the env as a dependency of your extension
+and use the extension API.
