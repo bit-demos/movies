@@ -1,0 +1,104 @@
+/**
+ * this is the main configuration file of your bit workspace.
+ * for full documentation, please see: https://harmony-docs.bit.dev/workspace/configurations
+ **/{
+  "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
+  /**
+   * main configuration of the Bit workspace.
+   **/
+  "teambit.workspace/workspace": {
+    /**
+     * the name of the component workspace. used for development purposes.
+     **/
+    "name": "my-workspace-name",
+    /**
+     * set the icon to be shown on the Bit server.
+     **/
+    "icon": "https://static.bit.dev/bit-logo.svg",
+    /**
+     * default directory for all components in workspace.
+     **/
+    "defaultDirectory": "{scope}/{name}",
+    /**
+     * default scope for all components in workspace.
+     **/
+    "defaultScope": "teambit.movie-demo"
+  },
+  /**
+   * main configuration for component dependency resolution.
+   **/
+  "teambit.dependencies/dependency-resolver": {
+    /**
+     * choose the package manager for Bit to use. you can choose between 'yarn', 'pnpm'
+     */
+    "packageManager": "teambit.dependencies/pnpm",
+    "policy": {
+      "dependencies": {
+        "@teambit/base-ui.theme.theme-provider": "^0.6.3",
+        "@teambit/base-ui.theme.fonts.book": "^0.6.7",
+        "@teambit/base-ui.theme.size-definition": "^0.6.7", 
+        "@testing-library/react": "^10.4.7",
+        "@types/classnames": "2.2.11",
+        "@types/react": "16.9.43",
+        "@types/react-dom": "16.9.10",
+        "axios": "0.21.1",
+        "bootstrap": "5.0.0-beta2",
+        "chai": "4.3.0",
+        "classnames": "2.2.6",
+        "react-bootstrap": "1.5.1",
+        "react-request-hook": "2.1.1",
+        "reset-css": "5.0.1",
+        "sinon": "9.2.4"
+      },
+      "peerDependencies": {
+        "@babel/runtime": "^7.11.2",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1"
+      }
+    },
+  },
+  /**
+   * workspace variants allow to set different subsets of configuration for components in your workspace.
+   * this is extremely useful for upgrading, aligning and building components with a
+   * new set of dependencies.
+   **/
+  "teambit.workspace/variants": {
+    /**
+     * "*" is a special rule which applied on all components in the workspace.
+     **/
+    "*": {
+
+    },
+    "components": {
+      "teambit.react/react": { }
+    },
+    "extensions": {
+      "teambit.harmony/aspect": {}
+    },
+    "{movies/*}": {
+      "teambit.movie-demo/extensions/with-preview-react": {},
+      "teambit.dependencies/dependency-resolver": {
+        "policy": {
+          "dependencies": {
+            "@teambit/movie-demo.context.api-context-provider": "-"
+          },
+          "devDependencies": {
+            "@teambit/movie-demo.context.api-context-provider": "-"
+          }
+        }
+      }
+    },
+    "{base-ui/*}": {
+      "teambit.react/react": {}
+    },
+    "components/styling": {
+      "teambit.dependencies/dependency-resolver": {
+        "policy": {
+          "dependencies": {
+            "bootstrap": "4.6.0"
+          }
+        }
+      }
+    }
+  }
+}
