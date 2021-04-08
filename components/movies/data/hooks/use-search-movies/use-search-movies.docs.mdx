@@ -1,0 +1,24 @@
+---
+description: A hook for searching movies from www.omdbapi.com's API. The base URL is configurable via the component's environment
+labels: ['react', 'typescript', 'movies', 'search', 'hooks']
+---
+
+The useSearchMovies hook enables searching through the www.omdbapi.com's movies database via their API.
+
+The hook returns for items for managaing the API calls:
+1. getMovies - the function for actually searching movies
+1. movies - the result of the movie API call
+1. isLoading - true while the getMovies function is waiting to populate the movies variable
+1. error - holds any errors returned by the API call
+
+So usage of the hook is like so:
+
+```js
+const [getMovies, movies, isLoading, error] = useSearchMovies();
+
+// Some function to call getMovies, show isLoading until it's been reset to false, and then fetch movies data
+```
+
+Note: the base Url for the API call is set via the component's Bit environment, and is configurable via the workspace.json file
+
+
