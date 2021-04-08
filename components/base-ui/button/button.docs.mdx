@@ -1,0 +1,21 @@
+---
+description: Basic themeable react button
+labels: ['react', 'typescript', 'button', 'theme']
+---
+import cs from 'classnames';
+import styles from '@teambit/movie-demo.styling.bootstrap-override';
+import { Button } from './index';
+
+### Overview
+
+Basic react button. Apply themeable css (see compositions) to style the button according to your design system.
+
+Example:
+
+```js live
+() => {
+console.log(styles);
+return <Button className={cs(styles["btn"], styles["btn-primary"])}>Add bootstrap styles to change how the button looks</Button>
+}
+
+```
