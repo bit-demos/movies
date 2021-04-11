@@ -10,7 +10,7 @@
     /**
      * the name of the component workspace. used for development purposes.
      **/
-    "name": "my-workspace-name",
+    "name": "harmony-demo-movies",
     /**
      * set the icon to be shown on the Bit server.
      **/
@@ -34,9 +34,10 @@
     "packageManager": "teambit.dependencies/pnpm",
     "policy": {
       "dependencies": {
-        "@teambit/base-ui.theme.theme-provider": "^0.6.3",
+        "@teambit/base-ui.theme.colors": "0.6.8",
         "@teambit/base-ui.theme.fonts.book": "^0.6.7",
-        "@teambit/base-ui.theme.size-definition": "^0.6.7", 
+        "@teambit/base-ui.theme.size-definition": "^0.6.7",
+        "@teambit/base-ui.theme.theme-provider": "^0.6.3",
         "@testing-library/react": "^10.4.7",
         "@types/classnames": "2.2.11",
         "@types/react": "16.9.43",
@@ -56,6 +57,11 @@
         "react-dom": "^16.13.1"
       }
     },
+    "packageManagerArgs": [],
+    "devFilePatterns": [
+      "**/*.spec.ts"
+    ],
+    "strictPeerDependencies": true
   },
   /**
    * workspace variants allow to set different subsets of configuration for components in your workspace.
@@ -66,11 +72,9 @@
     /**
      * "*" is a special rule which applied on all components in the workspace.
      **/
-    "*": {
-
-    },
+    "*": {},
     "components": {
-      "teambit.react/react": { }
+      "teambit.react/react": {}
     },
     "extensions": {
       "teambit.harmony/aspect": {}
