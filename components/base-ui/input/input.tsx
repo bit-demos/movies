@@ -16,16 +16,14 @@ export const Input = ({
                           ...rest
                       }: Props) => {
     return (
-        <div className={className}>
             <input
                 type="text"
-                className={cs(styles["form-control"])}
+                className={cs(styles["form-control"], className)}
                 placeholder={placeHolder}
                 maxLength={256}
                 value={value}
                 {...rest}
             />
-        </div>
     );
 };
 
