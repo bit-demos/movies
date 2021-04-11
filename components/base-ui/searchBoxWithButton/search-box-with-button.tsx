@@ -23,12 +23,10 @@ export const SearchBoxWithButton = ({onClicked, buttonText, inputPlaceholder}: S
     }
 
     return (
-        <div
-            className={cs(bootstrapStyles["form-row"], )}>
+        <div className={cs(bootstrapStyles["form-row"], bootstrapStyles["d-flex"], bootstrapStyles["justify-content-center"], )}>
             <div className={cs(
                 bootstrapStyles["form-group"], 
                 bootstrapStyles["d-flex"], 
-                bootstrapStyles["justify-content-center"], 
                 bootstrapStyles["align-items-center"], 
                 styles["search-container"],
                 bootstrapStyles["mb-3"]
@@ -41,7 +39,7 @@ export const SearchBoxWithButton = ({onClicked, buttonText, inputPlaceholder}: S
                     onChange={() => {
                     }}
                 />
-                <PrimaryButton type="submit" className={cs()}
+                <PrimaryButton type="submit" className={cs(bootstrapStyles["text-truncate"])}
                                onClick={() => handleClick()}>{buttonText || "Submit"}</PrimaryButton>
             </div>
 
