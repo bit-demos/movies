@@ -12,7 +12,7 @@ export const InputWithPlaceHolder = () => {
     return <Input placeHolder="Search" onChange={e => setValue(e.currentTarget.value)} value={value}/>;
 };
 
-export const InputWithCustomStyle = () => {
+export const InputWithCustomStyles = () => {
     const [value, setValue] = useState('');
-    return <Input className={"color: 'blue'"} onChange={e => setValue(e.currentTarget.value)} value={value}/>;
+    return <Input style={{color: 'blue', borderColor: 'red'}} onChange={e => setValue(e.currentTarget.value)} value={value}/>;
 };
