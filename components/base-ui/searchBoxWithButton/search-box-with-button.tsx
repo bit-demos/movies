@@ -16,6 +16,7 @@ export type SearchBoxWithButtonProps = {
 export const SearchBoxWithButton = ({onClicked, buttonText, inputPlaceholder}: SearchBoxWithButtonProps) => {
 
     const [inputValue, setInputValue] = useState('');
+    console.log(bootstrapStyles);
 
     const handleClick = () => {
         onClicked && onClicked(inputValue);
@@ -23,17 +24,24 @@ export const SearchBoxWithButton = ({onClicked, buttonText, inputPlaceholder}: S
 
     return (
         <div
-            className={cs(bootstrapStyles["form-row"], bootstrapStyles["d-flex"], bootstrapStyles["justify-content-center"])}>
-            <div className={cs(bootstrapStyles["form-group"], styles["search-section"])}>
+            className={cs(bootstrapStyles["form-row"], )}>
+            <div className={cs(
+                bootstrapStyles["form-group"], 
+                bootstrapStyles["d-flex"], 
+                bootstrapStyles["justify-content-center"], 
+                bootstrapStyles["align-items-center"], 
+                styles["search-container"],
+                bootstrapStyles["mb-3"]
+            )}>
                 <Input
-                    className={cs(bootstrapStyles["mb-3"], bootstrapStyles["col-md-8"], styles["input"])}
+                    className={cs(bootstrapStyles["mr-2"], bootstrapStyles["col-md-8"], bootstrapStyles["align-self-stretch"])}
                     onInput={e => setInputValue(e.currentTarget.value)}
                     placeHolder={inputPlaceholder || "Enter text"}
                     value={inputValue}
                     onChange={() => {
                     }}
                 />
-                <PrimaryButton type="submit" className={cs(bootstrapStyles["mb-3"])}
+                <PrimaryButton type="submit" className={cs()}
                                onClick={() => handleClick()}>{buttonText || "Submit"}</PrimaryButton>
             </div>
 
