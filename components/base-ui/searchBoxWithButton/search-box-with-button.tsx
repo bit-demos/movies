@@ -16,20 +16,15 @@ export type SearchBoxWithButtonProps = {
 export const SearchBoxWithButton = ({onClicked, buttonText, inputPlaceholder}: SearchBoxWithButtonProps) => {
 
     const [inputValue, setInputValue] = useState('');
-    console.log(bootstrapStyles);
 
     const handleClick = () => {
         onClicked && onClicked(inputValue);
     }
 
     return (
-        <div className={cs(bootstrapStyles["form-row"], bootstrapStyles["d-flex"], bootstrapStyles["justify-content-center"], )}>
+        <div className={cs(styles.container)}>
             <div className={cs(
-                bootstrapStyles["form-group"], 
-                bootstrapStyles["d-flex"], 
-                bootstrapStyles["align-items-center"], 
-                styles["search-container"],
-                bootstrapStyles["mb-3"]
+                styles.search
             )}>
                 <Input
                     className={cs(bootstrapStyles["mr-2"], bootstrapStyles["col-md-8"], bootstrapStyles["align-self-stretch"])}

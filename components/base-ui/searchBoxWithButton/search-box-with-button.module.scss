@@ -1,9 +1,17 @@
-.search-container{
-    width: 50%;
-    min-width: 400px;
-    max-height: 45px;
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-  }
+.search{
+  width: 50%;
+  min-width: 400px;
+  max-height: 45px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+}
+
+
 
