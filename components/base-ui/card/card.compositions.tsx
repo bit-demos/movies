@@ -1,13 +1,11 @@
 // @ts-ignore
 import React from 'react';
-import cs from 'classnames';
-import styles from '@teambit/movie-demo.styling.bootstrap-override';
 import {Card} from './index';
 
 const cardWithContent = (children, img?) => {
     return (
         <div style={{maxWidth: 600}}>
-            <Card className={cs(styles["w-50"], styles["mb-8"])} img={img}>{children}</Card>
+            <Card img={img}>{children}</Card>
         </div>
     )
 }
@@ -15,7 +13,7 @@ const cardWithContent = (children, img?) => {
 export const CardWithLink = () => {
     return (
         cardWithContent(
-            (<a className={cs(styles["card-link"])} href="#" onClick={() => {
+            (<a href="#" onClick={() => {
                 return false
             }} aria-label="A useful link description goes here">
                 Some interesting link text

@@ -1,0 +1,29 @@
+.altTheme {
+		color: orange;
+		// --text-highlight: #{$d60};
+		// --text-color: #{$d50};
+		// --text-muted: #{$d40};
+		// --steel-color: #{$d30};
+		
+		--base-color: pink;
+		// --base-highlight: #{$p60};
+	
+		// --border-color: #{$d10};
+		// --bg-color: #{$w10};
+		// --separator-color: #{$d20};
+		
+		// --muted-color: #{$p20}; //unsettled
+		// --muted-highlight: #{$p30}; //unsettled
+		
+		// --error-color: #{$r50};
+		// --error-highlight: #{$r60};
+		// --bg-error: #{$r20};
+	
+		// --bg-bedrock: #{$w10};  // i.e. <body/> background
+		// --bg-base: #{$w10};     // e.g. navigation
+		// --bg-layer: #{$w10};    // e.g. card
+		// --bg-crust: #{$w10};    // e.g. tooltip    
+		--bg-topping: turquoise;  // e.g. button, input, etc
+		--bg-topping-highlight: limegreen;
+		// --bg-dent: #{$w20};
+}

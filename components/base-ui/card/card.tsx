@@ -1,7 +1,9 @@
 // @ts-ignore
 import React, {HTMLAttributes} from 'react';
 import cs from 'classnames';
-import styles from '@teambit/movie-demo.styling.bootstrap-override';
+import { Card as BaseCard}  from '@teambit/base-ui.surfaces.card';
+import { BaseImage } from '@teambit/base-ui.elements.image';
+import styles from './card.module.scss';
 
 export type CardProps = { img? } & HTMLAttributes<HTMLDivElement>;
 
@@ -17,12 +19,11 @@ export const Card = ({
                          ...rest
                      }: CardProps) => {
     return (
-        <div className={cs(styles["card-horizontal-bleed"], styles["mt-5"], styles["mb-5"])}>
-            <img className={cs(styles["card-img-top"])} src={img}
-                 alt="Card image caption"/>
-            <div className={cs(styles["card-body"])}>
+        <BaseCard className={cs(styles.card)}>
+            <BaseImage className={cs(styles.image)} src={img} alt="Card image caption"/>
+            <div className={cs(styles.content)}>
                 {children}
             </div>
-        </div>
+        </BaseCard>
     )
 }

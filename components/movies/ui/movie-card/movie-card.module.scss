@@ -3,6 +3,12 @@
     margin-bottom: 30;
 }
 
+.contentContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .title {
     font-size: 18; 
     font-weight: 'bold'; 

@@ -1,1 +1,1 @@
-export { Button, PrimaryButton } from './button';
+export { Button, PrimaryButton, PrimaryCtaButton } from './button';

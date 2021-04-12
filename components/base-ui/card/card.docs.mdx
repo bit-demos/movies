@@ -3,7 +3,6 @@ description: Basic themeable card with top image and lower content section
 labels: ['react', 'typescript', 'card', 'theme']
 ---
 import cs from 'classnames';
-import styles from '@teambit/movie-demo.styling.bootstrap-override';
 import { Card } from './index';
 
 ### Overview
@@ -16,7 +15,6 @@ Example:
 ```js live
     <div style={{maxWidth: 600}}>
         <Card 
-            className={cs(styles["dds__w-50"], styles["dds__mb-8"])} 
             img={"https://wiki.mageia.org/mw-en/images/thumb/b/be/Mageia-7-Default-1920x1200.png/600px-Mageia-7-Default-1920x1200.png"}
         >
             Change the image url to adjust the background, or change the styles (from @dell/design.styles.dds-css) to adjust how it looks

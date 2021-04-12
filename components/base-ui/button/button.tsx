@@ -1,7 +1,7 @@
 // @ts-ignore
 import React, {HTMLAttributes} from 'react';
 import cs from 'classnames';
-import styles from '@teambit/movie-demo.styling.bootstrap-override';
+import styles from './button.module.scss';
 
 export type ButtonProps = {
     className?: string,
@@ -13,7 +13,7 @@ export const Button = ({className = "", onClick, type = "button", ...rest }: But
     return (
         <button
             type={type}
-            className={cs(styles["btn"], className)}
+            className={cs(styles.Button, className)}
             onClick={onClick}
             {...rest}
         />
@@ -28,11 +28,28 @@ export const PrimaryButton = ({
                               }: ButtonProps) => {
     return (
         <Button
-            className={cs(styles["btn-primary"], className)}
+            className={cs(styles.primary, className)}
             onClick={onClick}
             {...rest}
         >
             {children}
         </Button>
     )
+}
+
+export const PrimaryCtaButton = ({
+    className = "",
+    onClick,
+    children,
+    ...rest
+}: ButtonProps) => {
+return (
+<Button
+className={cs(styles.cta, className)}
+onClick={onClick}
+{...rest}
+>
+{children}
+</Button>
+)
 }

@@ -1,0 +1,29 @@
+.card {
+    // min-height: 500px;
+    width: 400px;
+	padding: 35px 29px;
+	display: flex;
+    flex-direction: column;
+
+	box-shadow: 0 26px 72px 0 rgba(0, 0, 0, 0.1);
+
+	button {
+		height: 38px;
+		font-size: 14px;
+	}
+
+	@media screen and (min-width: 920px) {
+        padding: 46px 42px;
+	}
+}
+
+.image {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    word-wrap: normal;
+}

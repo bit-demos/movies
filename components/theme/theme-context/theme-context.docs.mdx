@@ -4,8 +4,7 @@ labels: ['design', 'system', 'css', 'theme']
 ---
 
 import cs from 'classnames';
-import styles from '@teambit/movie-demo.styling.bootstrap-override';
-import Button from '@teambit/movie-demo.base-ui.button';
+import {PrimaryButton} from '@teambit/movie-demo.base-ui.button';
 import { ThemeContext } from './index';
 
 This theme context component is for wrapping component groups or even entire apps in a 'context' in which a theme is provided which acts on CSS classes for which the theme is aimed.
@@ -17,7 +16,7 @@ For instance, here is the same component with and without the theme context.
 
 ```js live
     <div>
-        <Button >no theme, basic styling</Button>
+        <PrimaryButton >no theme, basic styling</PrimaryButton>
     </div>
 
 ```
@@ -25,7 +24,7 @@ For instance, here is the same component with and without the theme context.
 ```js live
     <div>
         <ThemeContext>
-            <Button className={cs(styles["btn"], styles["btn-primary"])}>using theme defined by ThemeContext</Button>
+            <PrimaryButton>using theme defined by ThemeContext</PrimaryButton>
         </ThemeContext>
     </div>
 

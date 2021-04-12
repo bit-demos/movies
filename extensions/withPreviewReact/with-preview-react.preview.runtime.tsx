@@ -1,9 +1,9 @@
 import React from 'react';
+import axios from 'axios';
 import { PreviewRuntime } from '@teambit/preview';
 import { ReactAspect, ReactPreview } from '@teambit/react';
 import { Aspect } from '@teambit/harmony';
 import { ThemeContext } from '@teambit/movie-demo.theme.theme-context';
-import axios from 'axios';
 import { ApiContextProvider } from '@teambit/movie-demo.context.api-context-provider';
 import { WithPreviewReactConfig, WithPreviewReactAspect } from './with-preview-react.aspect';
 

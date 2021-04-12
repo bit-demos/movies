@@ -1,7 +1,7 @@
 // @ts-ignore
 import React, {HTMLAttributes} from 'react';
 import cs from 'classnames';
-import styles from '@teambit/movie-demo.styling.bootstrap-override';
+import styles from './input.module.scss';
 
 type Props = {
     placeHolder?: string;
@@ -18,7 +18,7 @@ export const Input = ({
     return (
             <input
                 type="text"
-                className={cs(styles["form-control"], className)}
+                className={cs(styles.evaInput, className)}
                 placeholder={placeHolder}
                 maxLength={256}
                 value={value}
