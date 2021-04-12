@@ -13,5 +13,17 @@
   justify-content: center;
 }
 
+.input{
+  align-self: stretch;
+  margin-right: 5px;
+  flex-grow: 2;
+}
+
+.button{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
 
 
