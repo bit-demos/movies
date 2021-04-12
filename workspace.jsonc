@@ -34,8 +34,14 @@
     "packageManager": "teambit.dependencies/pnpm",
     "policy": {
       "dependencies": {
+        "@teambit/base-ui.elements.image": "0.6.8",
+        "@teambit/base-ui.layout.grid-component": "0.6.8",
+        "@teambit/base-ui.surfaces.card": "0.6.9",
+        "@teambit/base-ui.theme.brand-definition": "0.6.8",
+        "@teambit/base-ui.theme.color-definition": "0.6.8",
         "@teambit/base-ui.theme.colors": "0.6.8",
         "@teambit/base-ui.theme.fonts.book": "^0.6.7",
+        "@teambit/base-ui.theme.heading-margin-definition": "0.6.8",
         "@teambit/base-ui.theme.size-definition": "^0.6.7",
         "@teambit/base-ui.theme.theme-provider": "^0.6.3",
         "@testing-library/react": "^10.4.7",
@@ -46,6 +52,7 @@
         "bootstrap": "5.0.0-beta2",
         "chai": "4.3.0",
         "classnames": "2.2.6",
+        "core-js": "3.10.1",
         "react-bootstrap": "1.5.1",
         "react-request-hook": "2.1.1",
         "reset-css": "5.0.1",

@@ -73,11 +73,11 @@
         "mainFile": "index.ts",
         "rootDir": "components/styling/bootstrap-override"
     },
-    "theme/base-theme": {
+    "theme/alt-theme": {
         "scope": "",
         "version": "",
         "mainFile": "index.ts",
-        "rootDir": "components/theme/base-theme"
+        "rootDir": "components/theme/alt-theme"
     },
     "theme/theme-context": {
         "scope": "",
@@ -85,5 +85,5 @@
         "mainFile": "index.ts",
         "rootDir": "components/theme/theme-context"
     },
-    "version": "1.0.50"
+    "version": "1.0.53"
 }
