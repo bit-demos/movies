@@ -4,13 +4,14 @@ labels: ['design', 'system', 'css', 'theme']
 ---
 
 import cs from 'classnames';
+import { altTheme } from '@teambit/movie-demo.theme.alt-theme';
 import {PrimaryButton} from '@teambit/movie-demo.base-ui.button';
 import { ThemeContext } from './index';
 
 This theme context component is for wrapping component groups or even entire apps in a 'context' in which a theme is provided which acts on CSS classes for which the theme is aimed.
 
-In this case, the default theme provided by this Theme Context component is a [basic bootstrap-compatible theme](https://bit.dev/teambit/use-case-examples/theme/base-theme).
-The theme can be overriden by providing an alternate them to the Theme Context component
+In this case, the default theme provided by this Theme Context component is a [bit's base theme](https://bit.dev/teambit/base-ui/theme/theme-provider).
+The theme can be overriden by providing an alternate theme to the Theme Context component
 
 For instance, here is the same component with and without the theme context.
 
@@ -23,7 +24,7 @@ For instance, here is the same component with and without the theme context.
 
 ```js live
     <div>
-        <ThemeContext>
+        <ThemeContext palette={altTheme}>
             <PrimaryButton>using theme defined by ThemeContext</PrimaryButton>
         </ThemeContext>
     </div>

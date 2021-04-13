@@ -3,6 +3,7 @@ import React from 'react';
 import { SearchBoxWithButton } from '@teambit/movie-demo.base-ui.search-box-with-button';
 import { MovieCardGrid } from '@teambit/movie-demo.movies.ui.movie-card-grid';
 import { useSearchMovies } from '@teambit/movie-demo.movies.data.hooks.use-search-movies';
+import styles from './movies-search.module.scss';
 
 
 
@@ -14,7 +15,7 @@ export const MoviesSearch = () => {
   }
 
   return (
-  <div >    
+  <div className={styles["movies-search-wrapper"]}>    
     <SearchBoxWithButton onClicked={onSearchClicked} inputPlaceholder="search term" buttonText="Search Movies"/>
     <MovieCardGrid list={movies} /> 
   </div>
