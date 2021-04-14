@@ -67,12 +67,6 @@
         "mainFile": "index.ts",
         "rootDir": "components/movies/ui/movie-card-grid"
     },
-    "styling/bootstrap-override": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "components/styling/bootstrap-override"
-    },
     "theme/alt-theme": {
         "scope": "",
         "version": "",
