@@ -22,7 +22,7 @@
     /**
      * default scope for all components in workspace.
      **/
-    "defaultScope": "teambit.movie-demo"
+    "defaultScope": "learn-harmony.movies-demo"
   },
   /**
    * main configuration for component dependency resolution.
@@ -49,11 +49,9 @@
         "@types/react": "16.9.43",
         "@types/react-dom": "16.9.10",
         "axios": "0.21.1",
-        "bootstrap": "5.0.0-beta2",
         "chai": "4.3.0",
         "classnames": "2.2.6",
         "core-js": "3.10.1",
-        "react-bootstrap": "1.5.1",
         "react-request-hook": "2.1.1",
         "reset-css": "5.0.1",
         "sinon": "9.2.4"
