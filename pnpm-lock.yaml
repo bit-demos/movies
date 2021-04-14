@@ -14,11 +14,9 @@ importers:
       '@teambit/harmony': registry.npmjs.org/@teambit/harmony/0.2.11
       '@types/react-dom': registry.npmjs.org/@types/react-dom/16.9.10
       axios: registry.npmjs.org/axios/0.21.1
-      bootstrap: registry.npmjs.org/bootstrap/4.6.0
       classnames: registry.npmjs.org/classnames/2.2.6
       core-js: registry.npmjs.org/core-js/3.10.1
       react: registry.npmjs.org/react/16.14.0
-      react-bootstrap: registry.npmjs.org/react-bootstrap/1.5.1_react-dom@16.14.0+react@16.14.0
       react-dom: registry.npmjs.org/react-dom/16.14.0_react@16.14.0
       react-request-hook: registry.npmjs.org/react-request-hook/2.1.1_6586c41711f0541c1b69383721e76872
       reset-css: registry.npmjs.org/reset-css/5.0.1
@@ -51,12 +49,10 @@ importers:
       '@types/react': ^16.14.5
       '@types/react-dom': 16.9.10
       axios: 0.21.1
-      bootstrap: 4.6.0
       chai: 4.3.0
       classnames: 2.2.6
       core-js: 3.10.1
       react: ^16.14.0
-      react-bootstrap: 1.5.1
       react-dom: ^16.14.0
       react-request-hook: 2.1.1
       reset-css: 5.0.1
@@ -137,6 +133,7 @@ packages:
   registry.npmjs.org/@babel/runtime/7.12.18:
     dependencies:
       regenerator-runtime: registry.npmjs.org/regenerator-runtime/0.13.7
+    dev: true
     name: '@babel/runtime'
     resolution:
       integrity: sha512-BogPQ7ciE6SYAUPtlm9tWbgI9+2AgqSam6QivMgXgAT+fKbgppaj4ZX15MHeLC1PVF5sNk70huBu20XxWOs8Cg==
@@ -159,42 +156,6 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/@jest/types/-/types-26.6.2.tgz
     version: 26.6.2
-  registry.npmjs.org/@popperjs/core/2.9.2:
-    dev: false
-    name: '@popperjs/core'
-    resolution:
-      integrity: sha512-VZMYa7+fXHdwIq1TDhSXoVmSPEGM/aa+6Aiq3nVVJ9bXr24zScr+NlKFKC3iPljA7ho/GAZr+d2jOf5GIRC30Q==
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/@popperjs/core/-/core-2.9.2.tgz
-    version: 2.9.2
-  registry.npmjs.org/@restart/context/2.1.4_react@16.14.0:
-    dependencies:
-      react: registry.npmjs.org/react/16.14.0
-    dev: false
-    id: registry.npmjs.org/@restart/context/2.1.4
-    name: '@restart/context'
-    peerDependencies:
-      react: '>=16.3.2'
-    resolution:
-      integrity: sha512-INJYZQJP7g+IoDUh/475NlGiTeMfwTXUEr3tmRneckHIxNolGOW9CTq83S8cxq0CgJwwcMzMJFchxvlwe7Rk8Q==
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/@restart/context/-/context-2.1.4.tgz
-    version: 2.1.4
-  registry.npmjs.org/@restart/hooks/0.3.26_react@16.14.0:
-    dependencies:
-      lodash: registry.npmjs.org/lodash/4.17.21
-      lodash-es: registry.npmjs.org/lodash-es/4.17.21
-      react: registry.npmjs.org/react/16.14.0
-    dev: false
-    id: registry.npmjs.org/@restart/hooks/0.3.26
-    name: '@restart/hooks'
-    peerDependencies:
-      react: '>=16.8.0'
-    resolution:
-      integrity: sha512-7Hwk2ZMYm+JLWcb7R9qIXk1OoUg1Z+saKWqZXlrvFwT3w6UArVNWgxYOzf+PJoK9zZejp8okPAKTctthhXLt5g==
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/@restart/hooks/-/hooks-0.3.26.tgz
-    version: 0.3.26
   registry.npmjs.org/@sinonjs/commons/1.8.3:
     dependencies:
       type-detect: registry.npmjs.org/type-detect/4.0.8
@@ -569,20 +530,13 @@ packages:
       tarball: https://registry.npmjs.org/@types/aria-query/-/aria-query-4.2.1.tgz
     version: 4.2.1
   registry.npmjs.org/@types/classnames/2.2.11:
+    dev: true
     name: '@types/classnames'
     resolution:
       integrity: sha512-2koNhpWm3DgWRp5tpkiJ8JGc1xTn2q0l+jUNUE7oMKXUf5NpI9AIdC4kbjGNFBdHtcxBD18LAksoudAVhFKCjw==
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/@types/classnames/-/classnames-2.2.11.tgz
     version: 2.2.11
-  registry.npmjs.org/@types/invariant/2.2.34:
-    dev: false
-    name: '@types/invariant'
-    resolution:
-      integrity: sha512-lYUtmJ9BqUN688fGY1U1HZoWT1/Jrmgigx2loq4ZcJpICECm/Om3V314BxdzypO0u5PORKGMM6x0OXaljV1YFg==
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/@types/invariant/-/invariant-2.2.34.tgz
-    version: 2.2.34
   registry.npmjs.org/@types/istanbul-lib-coverage/2.0.3:
     dev: true
     name: '@types/istanbul-lib-coverage'
@@ -647,16 +601,6 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/@types/react-dom/-/react-dom-16.9.10.tgz
     version: 16.9.10
-  registry.npmjs.org/@types/react-transition-group/4.4.1:
-    dependencies:
-      '@types/react': registry.npmjs.org/@types/react/16.9.43
-    dev: false
-    name: '@types/react-transition-group'
-    resolution:
-      integrity: sha512-vIo69qKKcYoJ8wKCJjwSgCTM+z3chw3g18dkrDfVX665tMH7tmbDxEAnPdey4gTlwZz5QuHGzd+hul0OVZDqqQ==
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/@types/react-transition-group/-/react-transition-group-4.4.1.tgz
-    version: 4.4.1
   registry.npmjs.org/@types/react/16.14.5:
     dependencies:
       '@types/prop-types': registry.npmjs.org/@types/prop-types/15.7.3
@@ -688,14 +632,6 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/@types/scheduler/-/scheduler-0.16.1.tgz
     version: 0.16.1
-  registry.npmjs.org/@types/warning/3.0.0:
-    dev: false
-    name: '@types/warning'
-    resolution:
-      integrity: sha1-DSUBJorY+ZYrdA04fEZU9fjiPlI=
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/@types/warning/-/warning-3.0.0.tgz
-    version: 3.0.0
   registry.npmjs.org/@types/yargs-parser/20.2.0:
     dev: true
     name: '@types/yargs-parser'
@@ -789,17 +725,6 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/axios/-/axios-0.21.1.tgz
     version: 0.21.1
-  registry.npmjs.org/bootstrap/4.6.0:
-    dev: false
-    name: bootstrap
-    peerDependencies:
-      jquery: 1.9.1 - 3
-      popper.js: ^1.16.1
-    resolution:
-      integrity: sha512-Io55IuQY3kydzHtbGvQya3H+KorS/M9rSNyfCGCg9WZ4pyT/lCxIlpJgG1GXW/PswzC84Tr2fBYi+7+jFVQQBw==
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/bootstrap/-/bootstrap-4.6.0.tgz
-    version: 4.6.0
   registry.npmjs.org/chai/4.3.0:
     dependencies:
       assertion-error: registry.npmjs.org/assertion-error/1.1.0
@@ -959,6 +884,7 @@ packages:
       tarball: https://registry.npmjs.org/csstype/-/csstype-2.6.16.tgz
     version: 2.6.16
   registry.npmjs.org/csstype/3.0.7:
+    dev: true
     name: csstype
     resolution:
       integrity: sha512-KxnUB0ZMlnUWCsx2Z8MUsr6qV6ja1w9ArPErJaJaF8a5SOWoHLIszeCTKGRGRgtLgYrs1E8CHkNSP1VZTTPc9g==
@@ -1017,17 +943,6 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/dom-accessibility-api/-/dom-accessibility-api-0.5.4.tgz
     version: 0.5.4
-  registry.npmjs.org/dom-helpers/5.2.0:
-    dependencies:
-      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
-      csstype: registry.npmjs.org/csstype/3.0.7
-    dev: false
-    name: dom-helpers
-    resolution:
-      integrity: sha512-Ru5o9+V8CpunKnz5LGgWXkmrH/20cGKwcHwS4m73zIvs54CN9epEmT/HLqFJW3kXpakAFkEdzgy1hzlJe3E4OQ==
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/dom-helpers/-/dom-helpers-5.2.0.tgz
-    version: 5.2.0
   registry.npmjs.org/escape-string-regexp/1.0.5:
     dev: true
     engines:
@@ -1142,16 +1057,6 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/has-own-prop/-/has-own-prop-2.0.0.tgz
     version: 2.0.0
-  registry.npmjs.org/invariant/2.2.4:
-    dependencies:
-      loose-envify: registry.npmjs.org/loose-envify/1.4.0
-    dev: false
-    name: invariant
-    resolution:
-      integrity: sha512-phJfQVBuaJM5raOpJjSfkiD6BpbCE4Ns//LaXl6wGYtUBY83nWS6Rf9tXm2e8VaK60JEjYldbPif/A2B1C2gNA==
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/invariant/-/invariant-2.2.4.tgz
-    version: 2.2.4
   registry.npmjs.org/isarray/0.0.1:
     dev: true
     name: isarray
@@ -1210,14 +1115,6 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/just-extend/-/just-extend-4.2.1.tgz
     version: 4.2.1
-  registry.npmjs.org/lodash-es/4.17.21:
-    dev: false
-    name: lodash-es
-    resolution:
-      integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/lodash-es/-/lodash-es-4.17.21.tgz
-    version: 4.17.21
   registry.npmjs.org/lodash.get/4.4.2:
     dev: true
     name: lodash.get
@@ -1334,21 +1231,6 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/pretty-format/-/pretty-format-26.6.2.tgz
     version: 26.6.2
-  registry.npmjs.org/prop-types-extra/1.1.1_react@16.14.0:
-    dependencies:
-      react: registry.npmjs.org/react/16.14.0
-      react-is: registry.npmjs.org/react-is/16.13.1
-      warning: registry.npmjs.org/warning/4.0.3
-    dev: false
-    id: registry.npmjs.org/prop-types-extra/1.1.1
-    name: prop-types-extra
-    peerDependencies:
-      react: '>=0.14.0'
-    resolution:
-      integrity: sha512-59+AHNnHYCdiC+vMwY52WmvP5dM3QLeoumYuEyceQDi9aEhtwN9zIQ2ZNo25sMyXnbh32h+P1ezDsUpUH3JAew==
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/prop-types-extra/-/prop-types-extra-1.1.1.tgz
-    version: 1.1.1
   registry.npmjs.org/prop-types/15.7.2:
     dependencies:
       loose-envify: registry.npmjs.org/loose-envify/1.4.0
@@ -1361,39 +1243,6 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/prop-types/-/prop-types-15.7.2.tgz
     version: 15.7.2
-  registry.npmjs.org/react-bootstrap/1.5.1_react-dom@16.14.0+react@16.14.0:
-    dependencies:
-      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
-      '@restart/context': registry.npmjs.org/@restart/context/2.1.4_react@16.14.0
-      '@restart/hooks': registry.npmjs.org/@restart/hooks/0.3.26_react@16.14.0
-      '@types/classnames': registry.npmjs.org/@types/classnames/2.2.11
-      '@types/invariant': registry.npmjs.org/@types/invariant/2.2.34
-      '@types/prop-types': registry.npmjs.org/@types/prop-types/15.7.3
-      '@types/react': registry.npmjs.org/@types/react/16.9.43
-      '@types/react-transition-group': registry.npmjs.org/@types/react-transition-group/4.4.1
-      '@types/warning': registry.npmjs.org/@types/warning/3.0.0
-      classnames: registry.npmjs.org/classnames/2.2.6
-      dom-helpers: registry.npmjs.org/dom-helpers/5.2.0
-      invariant: registry.npmjs.org/invariant/2.2.4
-      prop-types: registry.npmjs.org/prop-types/15.7.2
-      prop-types-extra: registry.npmjs.org/prop-types-extra/1.1.1_react@16.14.0
-      react: registry.npmjs.org/react/16.14.0
-      react-dom: registry.npmjs.org/react-dom/16.14.0_react@16.14.0
-      react-overlays: registry.npmjs.org/react-overlays/5.0.0_react-dom@16.14.0+react@16.14.0
-      react-transition-group: registry.npmjs.org/react-transition-group/4.4.1_react-dom@16.14.0+react@16.14.0
-      uncontrollable: registry.npmjs.org/uncontrollable/7.2.1_react@16.14.0
-      warning: registry.npmjs.org/warning/4.0.3
-    dev: false
-    id: registry.npmjs.org/react-bootstrap/1.5.1
-    name: react-bootstrap
-    peerDependencies:
-      react: '>=16.8.0'
-      react-dom: '>=16.8.0'
-    resolution:
-      integrity: sha512-jbJNGx9n4JvKgxlvT8DLKSeF3VcqnPJXS9LFdzoZusiZCCGoYecZ9qSCBH5n2A+kjmuura9JkvxI9l7HD+bIdQ==
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/react-bootstrap/-/react-bootstrap-1.5.1.tgz
-    version: 1.5.1
   registry.npmjs.org/react-dom/16.14.0_react@16.14.0:
     dependencies:
       loose-envify: registry.npmjs.org/loose-envify/1.4.0
@@ -1427,37 +1276,6 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/react-is/-/react-is-17.0.2.tgz
     version: 17.0.2
-  registry.npmjs.org/react-lifecycles-compat/3.0.4:
-    dev: false
-    name: react-lifecycles-compat
-    resolution:
-      integrity: sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz
-    version: 3.0.4
-  registry.npmjs.org/react-overlays/5.0.0_react-dom@16.14.0+react@16.14.0:
-    dependencies:
-      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
-      '@popperjs/core': registry.npmjs.org/@popperjs/core/2.9.2
-      '@restart/hooks': registry.npmjs.org/@restart/hooks/0.3.26_react@16.14.0
-      '@types/warning': registry.npmjs.org/@types/warning/3.0.0
-      dom-helpers: registry.npmjs.org/dom-helpers/5.2.0
-      prop-types: registry.npmjs.org/prop-types/15.7.2
-      react: registry.npmjs.org/react/16.14.0
-      react-dom: registry.npmjs.org/react-dom/16.14.0_react@16.14.0
-      uncontrollable: registry.npmjs.org/uncontrollable/7.2.1_react@16.14.0
-      warning: registry.npmjs.org/warning/4.0.3
-    dev: false
-    id: registry.npmjs.org/react-overlays/5.0.0
-    name: react-overlays
-    peerDependencies:
-      react: '>=16.3.0'
-      react-dom: '>=16.3.0'
-    resolution:
-      integrity: sha512-TKbqfAv23TFtCJ2lzISdx76p97G/DP8Rp4TOFdqM9n8GTruVYgE3jX7Zgb8+w7YJ18slTVcDTQ1/tFzdCqjVhA==
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/react-overlays/-/react-overlays-5.0.0.tgz
-    version: 5.0.0
   registry.npmjs.org/react-request-hook/2.1.1_6586c41711f0541c1b69383721e76872:
     dependencies:
       axios: registry.npmjs.org/axios/0.21.1
@@ -1479,25 +1297,6 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/react-request-hook/-/react-request-hook-2.1.1.tgz
     version: 2.1.1
-  registry.npmjs.org/react-transition-group/4.4.1_react-dom@16.14.0+react@16.14.0:
-    dependencies:
-      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
-      dom-helpers: registry.npmjs.org/dom-helpers/5.2.0
-      loose-envify: registry.npmjs.org/loose-envify/1.4.0
-      prop-types: registry.npmjs.org/prop-types/15.7.2
-      react: registry.npmjs.org/react/16.14.0
-      react-dom: registry.npmjs.org/react-dom/16.14.0_react@16.14.0
-    dev: false
-    id: registry.npmjs.org/react-transition-group/4.4.1
-    name: react-transition-group
-    peerDependencies:
-      react: '>=16.6.0'
-      react-dom: '>=16.6.0'
-    resolution:
-      integrity: sha512-Djqr7OQ2aPUiYurhPalTrVy9ddmFCCzwhqQmtN+J3+3DzLO209Fdr70QrN8Z3DsglWql6iY1lDWAfpFiBtuKGw==
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/react-transition-group/-/react-transition-group-4.4.1.tgz
-    version: 4.4.1
   registry.npmjs.org/react/16.14.0:
     dependencies:
       loose-envify: registry.npmjs.org/loose-envify/1.4.0
@@ -1521,6 +1320,7 @@ packages:
       tarball: https://registry.npmjs.org/reflect-metadata/-/reflect-metadata-0.1.13.tgz
     version: 0.1.13
   registry.npmjs.org/regenerator-runtime/0.13.7:
+    dev: true
     name: regenerator-runtime
     resolution:
       integrity: sha512-a54FxoJDIr27pgf7IgeQGxmqUNYrcV338lf/6gH456HZ/PhX+5BcwHXG9ajESmwe6WRO0tAzRUrRmNONWgkrew==
@@ -1613,23 +1413,6 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/type-detect/-/type-detect-4.0.8.tgz
     version: 4.0.8
-  registry.npmjs.org/uncontrollable/7.2.1_react@16.14.0:
-    dependencies:
-      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
-      '@types/react': registry.npmjs.org/@types/react/16.9.43
-      invariant: registry.npmjs.org/invariant/2.2.4
-      react: registry.npmjs.org/react/16.14.0
-      react-lifecycles-compat: registry.npmjs.org/react-lifecycles-compat/3.0.4
-    dev: false
-    id: registry.npmjs.org/uncontrollable/7.2.1
-    name: uncontrollable
-    peerDependencies:
-      react: '>=15.0.0'
-    resolution:
-      integrity: sha512-svtcfoTADIB0nT9nltgjujTi7BzVmwjZClOmskKu/E8FW9BXzg9os8OLr4f8Dlnk0rYWJIWr4wv9eKUXiQvQwQ==
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/uncontrollable/-/uncontrollable-7.2.1.tgz
-    version: 7.2.1
   registry.npmjs.org/universalify/0.1.2:
     dev: false
     engines:
@@ -1652,13 +1435,3 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/user-home/-/user-home-2.0.0.tgz
     version: 2.0.0
-  registry.npmjs.org/warning/4.0.3:
-    dependencies:
-      loose-envify: registry.npmjs.org/loose-envify/1.4.0
-    dev: false
-    name: warning
-    resolution:
-      integrity: sha512-rpJyN222KWIvHJ/F53XSZv0Zl/accqHR8et1kpaMTD/fLCRxtV8iX8czMzY7sVZupTI3zcUTg8eycS2kNF9l6w==
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/warning/-/warning-4.0.3.tgz
-    version: 4.0.3
