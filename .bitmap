@@ -3,81 +3,81 @@
 {
     "base-ui/button": {
         "scope": "",
-        "version": "0.0.1",
+        "version": "",
         "mainFile": "index.ts",
         "rootDir": "components/base-ui/button"
     },
     "base-ui/card": {
         "scope": "",
-        "version": "0.0.1",
+        "version": "",
         "mainFile": "index.ts",
         "rootDir": "components/base-ui/card"
     },
     "base-ui/input": {
         "scope": "",
-        "version": "0.0.1",
+        "version": "",
         "mainFile": "index.ts",
         "rootDir": "components/base-ui/input"
     },
     "base-ui/search-box-with-button": {
         "scope": "",
-        "version": "0.0.1",
+        "version": "",
         "mainFile": "index.ts",
         "rootDir": "components/base-ui/searchBoxWithButton"
     },
     "context/api-context-provider": {
         "scope": "",
-        "version": "0.0.1",
+        "version": "",
         "mainFile": "index.ts",
         "rootDir": "components/context/api-context-provider"
     },
     "extensions/with-preview-react": {
         "scope": "",
-        "version": "0.0.1",
+        "version": "",
         "mainFile": "index.ts",
         "rootDir": "extensions/withPreviewReact"
     },
     "movies/data/hooks/use-search-movies": {
         "scope": "",
-        "version": "0.0.1",
+        "version": "",
         "mainFile": "index.ts",
         "rootDir": "components/movies/data/hooks/use-search-movies"
     },
     "movies/model/movie": {
         "scope": "",
-        "version": "0.0.1",
+        "version": "",
         "mainFile": "index.ts",
         "rootDir": "components/movies/movie"
     },
     "movies/movies-search": {
         "scope": "",
-        "version": "0.0.1",
+        "version": "",
         "mainFile": "index.ts",
         "rootDir": "components/movies/movies-search"
     },
     "movies/ui/movie-card": {
         "scope": "",
-        "version": "0.0.1",
+        "version": "",
         "mainFile": "index.ts",
         "rootDir": "components/movies/ui/movie-card"
     },
     "movies/ui/movie-card-grid": {
         "scope": "",
-        "version": "0.0.1",
+        "version": "",
         "mainFile": "index.ts",
         "rootDir": "components/movies/ui/movie-card-grid"
     },
     "theme/alt-theme": {
         "scope": "",
-        "version": "0.0.1",
+        "version": "",
         "mainFile": "index.ts",
         "rootDir": "components/theme/alt-theme"
     },
     "theme/theme-context": {
         "scope": "",
-        "version": "0.0.1",
+        "version": "",
         "mainFile": "index.ts",
         "rootDir": "components/theme/theme-context"
     },
-    "version": "1.0.53"
+    "version": "1.0.61"
 }
