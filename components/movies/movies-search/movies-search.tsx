@@ -1,8 +1,8 @@
 // @ts-ignore
 import React from 'react';
-import { SearchBoxWithButton } from '@teambit/movie-demo.base-ui.search-box-with-button';
-import { MovieCardGrid } from '@teambit/movie-demo.movies.ui.movie-card-grid';
-import { useSearchMovies } from '@teambit/movie-demo.movies.data.hooks.use-search-movies';
+import { SearchBoxWithButton } from '@learn-harmony/movies.base-ui.search-box-with-button';
+import { MovieCardGrid } from '@learn-harmony/movies.movies.ui.movie-card-grid';
+import { useSearchMovies } from '@learn-harmony/movies.movies.data.hooks.use-search-movies';
 import styles from './movies-search.module.scss';
 
 

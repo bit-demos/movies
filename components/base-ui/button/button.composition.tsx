@@ -1,7 +1,7 @@
 // @ts-ignore
 import React from 'react';
-import { ThemeContext } from '@teambit/movie-demo.theme.theme-context';
-import { altTheme } from '@teambit/movie-demo.theme.alt-theme';
+import { ThemeContext } from '@learn-harmony/movies.theme.theme-context';
+import { altTheme } from '@learn-harmony/movies.theme.alt-theme';
 import {Button, PrimaryButton, PrimaryCtaButton } from './button';
 
 

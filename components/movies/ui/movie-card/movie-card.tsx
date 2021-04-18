@@ -1,9 +1,9 @@
 // @ts-ignore
 import React from 'react';
 import cs from 'classnames';
-import {PrimaryButton} from '@teambit/movie-demo.base-ui.button';
-import { Card } from '@teambit/movie-demo.base-ui.card';
-import {Movie} from '@teambit/movie-demo.movies.model.movie';
+import {PrimaryButton} from '@learn-harmony/movies.base-ui.button';
+import { Card } from '@learn-harmony/movies.base-ui.card';
+import {Movie} from '@learn-harmony/movies.movies.model.movie';
 // @ts-ignore
 import styles from './movie-card.module.scss';
 

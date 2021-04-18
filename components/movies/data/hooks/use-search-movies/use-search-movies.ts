@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react';
-import { useContextProvider, ContextResource } from '@teambit/movie-demo.context.api-context-provider';
-import { Movie, MovieFromApi, MovieResponse } from '@teambit/movie-demo.movies.model.movie';
+import { useContextProvider, ContextResource } from '@learn-harmony/movies.context.api-context-provider';
+import { Movie, MovieFromApi, MovieResponse } from '@learn-harmony/movies.movies.model.movie';
 
 export const useSearchMovies = (): [
   (searchFor: string) => Promise<void>,

@@ -22,7 +22,7 @@
     /**
      * default scope for all components in workspace.
      **/
-    "defaultScope": "learn-harmony.movies-demo"
+    "defaultScope": "learn-harmony.movies"
   },
   /**
    * main configuration for component dependency resolution.
@@ -89,10 +89,10 @@
       "teambit.dependencies/dependency-resolver": {
         "policy": {
           "dependencies": {
-            "@teambit/movie-demo.context.api-context-provider": "-"
+            "@learn-harmony/movies.context.api-context-provider": "-"
           },
           "devDependencies": {
-            "@teambit/movie-demo.context.api-context-provider": "-"
+            "@learn-harmony/movies.context.api-context-provider": "-"
           }
         }
       }

@@ -1,8 +1,8 @@
 import React from 'react';
 import cs from 'classnames';
 import { Grid } from '@teambit/base-ui.layout.grid-component';
-import { Movie } from '@teambit/movie-demo.movies.model.movie';
-import { MovieCard } from '@teambit/movie-demo.movies.ui.movie-card';
+import { Movie } from '@learn-harmony/movies.movies.model.movie';
+import { MovieCard } from '@learn-harmony/movies.movies.ui.movie-card';
 import styles from './movie-card-grid.module.scss';
 
 type Props = {

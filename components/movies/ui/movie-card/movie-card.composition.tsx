@@ -1,7 +1,7 @@
 // @ts-ignore
 import React from 'react';
 import {MovieCard} from './movie-card';
-import { Movie, MovieType } from '@teambit/movie-demo.movies.model.movie';
+import { Movie, MovieType } from '@learn-harmony/movies.movies.model.movie';
 
 const movie = new Movie(
   "The Wolf of Wall Street",
