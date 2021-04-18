@@ -34,7 +34,7 @@ export class WithPreviewReactMain {
           },
           peerDependencies: {
             '@learn-harmony/movies.context.api-context-provider': {
-              version: '^0.0.1',
+              version: 'latest',
               resolveFromEnv: true,
             },
           },
