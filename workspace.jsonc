@@ -85,7 +85,7 @@
       "teambit.harmony/aspect": {}
     },
     "{movies/*}": {
-      "teambit.movie-demo/extensions/with-preview-react": {},
+      "learn-harmony.movies/extensions/with-preview-react": {},
       "teambit.dependencies/dependency-resolver": {
         "policy": {
           "dependencies": {
