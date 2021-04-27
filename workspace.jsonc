@@ -97,6 +97,19 @@
         }
       }
     },
+    "{pages/*}": {
+      "learn-harmony.movies/extensions/with-preview-react": {},
+      "teambit.dependencies/dependency-resolver": {
+        "policy": {
+          "dependencies": {
+            "@learn-harmony/movies.context.api-context-provider": "-"
+          },
+          "devDependencies": {
+            "@learn-harmony/movies.context.api-context-provider": "-"
+          }
+        }
+      }
+    },
     "{base-ui/*}": {
       "teambit.react/react": {}
     },
