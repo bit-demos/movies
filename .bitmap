@@ -2,82 +2,94 @@
 
 {
     "base-ui/button": {
-        "scope": "",
-        "version": "",
+        "scope": "learn-harmony.movies",
+        "version": "0.0.1",
         "mainFile": "index.ts",
         "rootDir": "components/base-ui/button"
     },
     "base-ui/card": {
-        "scope": "",
-        "version": "",
+        "scope": "learn-harmony.movies",
+        "version": "0.0.1",
         "mainFile": "index.ts",
         "rootDir": "components/base-ui/card"
     },
     "base-ui/input": {
-        "scope": "",
-        "version": "",
+        "scope": "learn-harmony.movies",
+        "version": "0.0.1",
         "mainFile": "index.ts",
         "rootDir": "components/base-ui/input"
     },
     "base-ui/search-box-with-button": {
-        "scope": "",
-        "version": "",
+        "scope": "learn-harmony.movies",
+        "version": "0.0.1",
         "mainFile": "index.ts",
         "rootDir": "components/base-ui/searchBoxWithButton"
     },
     "context/api-context-provider": {
-        "scope": "",
-        "version": "",
+        "scope": "learn-harmony.movies",
+        "version": "0.0.1",
         "mainFile": "index.ts",
         "rootDir": "components/context/api-context-provider"
     },
-    "extensions/with-preview-react": {
+    "context/shopping-cart-context": {
         "scope": "",
         "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "components/context/shopping-cart-context"
+    },
+    "extensions/with-preview-react": {
+        "scope": "learn-harmony.movies",
+        "version": "0.0.1",
         "mainFile": "index.ts",
         "rootDir": "extensions/withPreviewReact"
     },
-    "movies/data/hooks/use-search-movies": {
+    "models/movie": {
         "scope": "",
-        "version": "",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "components/models/movie"
+    },
+    "movies/data/hooks/use-search-movies": {
+        "scope": "learn-harmony.movies",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "components/movies/data/hooks/use-search-movies"
     },
-    "movies/model/movie": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "components/movies/movie"
-    },
     "movies/movies-search": {
-        "scope": "",
-        "version": "",
+        "scope": "learn-harmony.movies",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "components/movies/movies-search"
     },
     "movies/ui/movie-card": {
-        "scope": "",
-        "version": "",
+        "scope": "learn-harmony.movies",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "components/movies/ui/movie-card"
     },
     "movies/ui/movie-card-grid": {
-        "scope": "",
-        "version": "",
+        "scope": "learn-harmony.movies",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "components/movies/ui/movie-card-grid"
     },
-    "theme/alt-theme": {
+    "pages/shopping-cart": {
         "scope": "",
         "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "components/pages/shopping-cart"
+    },
+    "theme/alt-theme": {
+        "scope": "learn-harmony.movies",
+        "version": "0.0.1",
         "mainFile": "index.ts",
         "rootDir": "components/theme/alt-theme"
     },
     "theme/theme-context": {
-        "scope": "",
-        "version": "",
+        "scope": "learn-harmony.movies",
+        "version": "0.0.1",
         "mainFile": "index.ts",
         "rootDir": "components/theme/theme-context"
     },
-    "version": "1.0.61"
+    "version": "1.0.67"
 }
