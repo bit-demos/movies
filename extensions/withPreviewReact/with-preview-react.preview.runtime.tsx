@@ -5,6 +5,7 @@ import { ReactAspect, ReactPreview } from '@teambit/react';
 import { Aspect } from '@teambit/harmony';
 import { ThemeContext } from '@learn-harmony/movies.theme.theme-context';
 import { ApiContextProvider } from '@learn-harmony/movies.context.api-context-provider';
+import { ShoppingCartContextProvider } from '@learn-harmony/movies.context.shopping-cart-context';
 import { WithPreviewReactConfig, WithPreviewReactAspect } from './with-preview-react.aspect';
 
 export class WithPreviewReactPreview {
@@ -34,6 +35,9 @@ export class WithPreviewReactPreview {
     react.registerProvider([
       ({ children }) => {
         return <ApiContextProvider apiInstance={axiosInstance}>{children}</ApiContextProvider>
+      },
+      ({ children }) => {
+        return <ShoppingCartContextProvider >{children}</ShoppingCartContextProvider>
       },
       ThemeContext as any
     ]);
