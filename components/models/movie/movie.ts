@@ -18,8 +18,8 @@ export type MovieResponse = {
   totalResults: number;
 }
 
-export type MovieForCart = {
-  movies: Movie[],
+export type MovieForFavourites = {
+  movie: Movie,
   quantity: number
 }
 
