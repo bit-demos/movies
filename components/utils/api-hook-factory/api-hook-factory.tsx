@@ -2,11 +2,18 @@ import {useState, useEffect} from 'react';
 import { UseResourceResult } from 'react-request-hook';
 import { useContextProvider, ContextResource } from '@learn-harmony/movies.context.api-context-provider';
 
-export const ApiHookFactory = (
-  apiContext: (props?:any) => ContextResource<any>,
+/**
+ * This is a factory for producing apiWithContext hooks. These hooks assume there is a ApiContextProvider provider 
+ * from the api-context-provider component being injected into the consuming app
+ * 
+ * @param apiContext 
+ * @param processData 
+ */
+export const ApiHookFactory = <TPropType, > (
+  apiContext: (props?:TPropType) => ContextResource<any>,
   processData: (data) => any[]
 ): [
-  (searchFor: string) => Promise<void>,
+  (props: TPropType) => Promise<void>,
   any[],
   boolean,
   string,
@@ -32,12 +39,12 @@ export const ApiHookFactory = (
     setIsLoading(false);
   }
 
-  const apiCall = async (searchFor: string) => {
-    if (!searchFor) return;
+  const apiCall = async (props: TPropType) => {
+    if (!props) return;
 
     setIsLoading(true);
     try {
-      getApitData(searchFor);
+      getApitData({...props});
     } catch (err) {
       setError(err.toString());
       setIsLoading(false);
