@@ -3,9 +3,13 @@ import { useContextProvider, ContextResource } from '@learn-harmony/movies.conte
 import { Movie, MovieFromApi, MovieResponse } from '@learn-harmony/movies.models.movie';
 import { ApiHookFactory } from '@learn-harmony/movies.utils.api-hook-factory';
 
+export type UseSearchProps = {
+  searchStr: string
+}
+
 export const useSearchMovies = () => {
 
-  const apiContext = (searchStr: string): ContextResource<MovieResponse> => ({
+  const apiContext = ({searchStr}: UseSearchProps): ContextResource<MovieResponse> => ({
       params: {
         s: searchStr
       }
