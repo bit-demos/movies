@@ -45,7 +45,7 @@
     },
     "models/movie": {
         "scope": "",
-        "version": "0.0.1",
+        "version": "",
         "mainFile": "index.ts",
         "rootDir": "components/models/movie"
     },
@@ -90,6 +90,12 @@
         "version": "0.0.1",
         "mainFile": "index.ts",
         "rootDir": "components/theme/theme-context"
+    },
+    "utils/hooks/api-hook-factory": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "components/utils/api-hook-factory"
     },
     "version": "1.0.68"
 }
