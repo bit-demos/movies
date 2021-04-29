@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react';
 import { useContextProvider, ContextResource } from '@learn-harmony/movies.context.api-context-provider';
 import { Movie, MovieFromApi, MovieResponse } from '@learn-harmony/movies.models.movie';
-import { ApiHookFactory } from '@learn-harmony/movies.utils.api-hook-factory';
+import { ApiHookFactory } from '@learn-harmony/movies.utils.hooks.api-hook-factory';
 
 export type UseSearchProps = {
   searchStr: string

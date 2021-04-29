@@ -12,16 +12,18 @@ type Props = {
 export const MovieCardGrid = ({list}: Props) => {
   return (
     <>
-        {list.length > 0 ?
+        {
+        list.length > 0 ?
           <Grid colMd={2} colLg={3} className={cs(styles.grid)}>
-          {list.map((movie) => (
-              <div className={cs(styles["movie-card"] )} key={movie.imdbID}>
-                <MovieCard movie={movie}/>
-              </div>
-          ))} 
+            {list.map((movie) => (
+                <div className={cs(styles["movie-card"] )} key={movie.imdbID}>
+                  <MovieCard movie={movie}/>
+                </div>
+            ))} 
           </Grid>
            :
-          "No movies to display"}
+          "No movies to display"
+          }
     </>
   );
 };

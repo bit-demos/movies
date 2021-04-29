@@ -1,7 +1,7 @@
 import { Aspect } from '@teambit/harmony';
 
 export type WithPreviewReactConfig = {
-  baseProductUrl: string;
+  baseUrl: string;
   apiKey: string;
 
 };
@@ -9,7 +9,7 @@ export type WithPreviewReactConfig = {
 export const WithPreviewReactAspect = Aspect.create({
   id: 'teambit.use-case-examples/envs.with-preview',
   defaultConfig: {
-    baseProductUrl: 'https://www.omdbapi.com',
+    baseUrl: 'https://www.omdbapi.com',
     apiKey: '35fdde3e'
   },
 });

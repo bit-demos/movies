@@ -22,7 +22,7 @@ export const ApiHookFactory = <TPropType, > (
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
 
-  const [apiDataResult, getApitData] = useContextProvider(apiContext);
+  const [apiDataResult, getApiData] = useContextProvider(apiContext);
 
   useEffect(() => handleDataReturn(), [apiDataResult])
 
@@ -40,11 +40,12 @@ export const ApiHookFactory = <TPropType, > (
   }
 
   const apiCall = async (props: TPropType) => {
+    debugger;
     if (!props) return;
 
     setIsLoading(true);
     try {
-      getApitData({...props});
+      getApiData(props);
     } catch (err) {
       setError(err.toString());
       setIsLoading(false);
