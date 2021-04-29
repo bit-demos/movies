@@ -1,6 +1,6 @@
 // @ts-ignore
 import React, {useState, useEffect} from 'react';
-import cs from 'classNames';
+import cs from 'classnames';
 import {Input} from '@learn-harmony/movies.base-ui.input';
 import {PrimaryButton} from '@learn-harmony/movies.base-ui.button';
 
