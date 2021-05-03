@@ -84,20 +84,7 @@
     "extensions": {
       "teambit.harmony/aspect": {}
     },
-    "{movies/*}": {
-      "learn-harmony.movies/extensions/with-preview-react": {},
-      "teambit.dependencies/dependency-resolver": {
-        "policy": {
-          "dependencies": {
-            "@learn-harmony/movies.context.api-context-provider": "-"
-          },
-          "devDependencies": {
-            "@learn-harmony/movies.context.api-context-provider": "-"
-          }
-        }
-      }
-    },
-    "{pages/*}": {
+    "{movies/*}, {pages/*}": {
       "learn-harmony.movies/extensions/with-preview-react": {},
       "teambit.dependencies/dependency-resolver": {
         "policy": {
