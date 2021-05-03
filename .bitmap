@@ -97,5 +97,5 @@
         "mainFile": "index.ts",
         "rootDir": "components/utils/api-hook-factory"
     },
-    "version": "1.0.68"
+    "version": "1.0.70"
 }
