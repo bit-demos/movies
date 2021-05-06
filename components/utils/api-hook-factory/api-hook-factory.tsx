@@ -7,7 +7,16 @@ import { useContextProvider, ContextResource } from '@learn-harmony/movies.conte
  * from the api-context-provider component being injected into the consuming app
  * 
  * @param apiContext 
- * @param processData 
+ * should take the format of a function, of return type ContextResource<ApiDataObjectType>, which accepts parameters which are to be configured in the url, 
+ * and which returns an axios url object which is to be appended to the context value injected somewhere above in the app
+ * For example:
+ * (searchStr: string): ContextResource<MovieResponse> => ({
+      params: {
+        s: searchStr
+      }
+    });
+ * @param processData function which takes as a parameter the data object from the axios api call and processes it. Output will be in the format that
+ * the the api hook will return in the apiData variable
  */
 export const ApiHookFactory = <TPropType, > (
   apiContext: (props?:TPropType) => ContextResource<any>,
@@ -31,16 +40,18 @@ export const ApiHookFactory = <TPropType, > (
       setIsLoading(true);
       return;
     }
-    if (!apiDataResult.data) return;
-    const { data }  = apiDataResult;
-    const list = processData(data);
-    setApiData(list);
-    if (error) setError('');
+    if (apiDataResult.error) {
+      setError(apiDataResult.error.message)
+    }
+    else if (apiDataResult.data){
+      const { data }  = apiDataResult;
+      const list = processData(data);
+      setApiData(list);
+    }
     setIsLoading(false);
   }
 
   const apiCall = async (props: TPropType) => {
-    debugger;
     if (!props) return;
 
     setIsLoading(true);

@@ -25,7 +25,7 @@ export class WithPreviewReactPreview {
   static async provider([react]: [ReactPreview], config: WithPreviewReactConfig) {
     const withPreviewReactPreview = new WithPreviewReactPreview(config);
     const axiosInstance = axios.create({
-      baseURL: config.baseProductUrl,
+      baseURL: config.baseUrl,
       params: {
         apikey: config.apiKey
       }
