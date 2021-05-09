@@ -44,8 +44,8 @@
         "rootDir": "extensions/withPreviewReact"
     },
     "models/movie": {
-        "scope": "",
-        "version": "",
+        "scope": "learn-harmony.movies",
+        "version": "0.0.1",
         "mainFile": "index.ts",
         "rootDir": "components/models/movie"
     },
