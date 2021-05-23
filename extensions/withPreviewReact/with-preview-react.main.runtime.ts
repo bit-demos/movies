@@ -27,13 +27,13 @@ export class WithPreviewReactMain {
         react.overrideJestConfig(require.resolve('./jest/jest.config')),
         react.overrideDependencies({
           dependencies: {
-            '@learn-harmony/movies.context.api-context-provider': '-'
+            '@learn-harmony/movies.context.movies-api-context': '-'
           },
           devDependencies: {
-            '@learn-harmony/movies.context.api-context-provider': '-'
+            '@learn-harmony/movies.context.movies-api-context': '-'
           },
           peerDependencies: {
-            '@learn-harmony/movies.context.api-context-provider': {
+            '@learn-harmony/movies.context.movies-api-context': {
               version: 'latest',
               resolveFromEnv: true,
             },

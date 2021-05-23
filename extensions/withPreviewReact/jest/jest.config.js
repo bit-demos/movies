@@ -3,6 +3,6 @@ const reactJestConfig = require("@teambit/react").jestconfig;
 module.exports = {
   ...reactJestConfig,
   transformIgnorePatterns: [
-    "/node_modules/(?!(prop-types|@teambit))",
+    "/node_modules/(?!(prop-types|@teambit|@learn-harmony))",
   ],
 };

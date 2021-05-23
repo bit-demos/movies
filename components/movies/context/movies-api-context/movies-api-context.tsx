@@ -7,9 +7,9 @@ const defaultBaseUrl = 'https://www.omdbapi.com';
 const defaultApiKey = '35fdde3e';
 
 export type MovieApiContextProps = {
-    baseUrl: string;
-    apiKey: string;
-    children: ReactNode;
+    baseUrl?: string;
+    apiKey?: string;
+    children?: ReactNode;
 }
 
 export function MovieApiContextProvider({ baseUrl, apiKey, children}: MovieApiContextProps){

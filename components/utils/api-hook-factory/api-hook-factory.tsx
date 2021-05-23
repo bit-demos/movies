@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react';
-import { useApiContextType, ContextResource } from '@learn-harmony/movies.context.api-context-provider';
+import { useApiContext, ContextResource } from '@learn-harmony/movies.context.api-context-provider';
 
 /**
  * This is a factory for producing apiWithContext hooks. These hooks assume there is a ApiContextProvider provider 
@@ -18,8 +18,9 @@ import { useApiContextType, ContextResource } from '@learn-harmony/movies.contex
  * the the api hook will return in the apiData variable
  */
 export const ApiHookFactory = <TPropType, > (
-  apiContextSetup: useApiContextType<>,
-  processData: (data) => any[]
+  apiCallConfig: (props?:TPropType) => ContextResource<any>,
+  processData: (data) => any[],
+  overrideUseContext?: any // should be used if you know you want to override the useContext instance. 
 ): [
   (props: TPropType) => Promise<void>,
   any[],
@@ -30,7 +31,9 @@ export const ApiHookFactory = <TPropType, > (
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
 
-  const [apiDataResult, getApiData] = useApiContext(apiCallConfig);
+  const useContextFunction = overrideUseContext || useApiContext;
+
+  const [apiDataResult, getApiData] = useContextFunction(apiCallConfig);
 
   useEffect(() => handleDataReturn(), [apiDataResult])
 
