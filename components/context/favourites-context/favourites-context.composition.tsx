@@ -1,42 +1,41 @@
 import React, { useContext } from 'react';
-import { Movie, mockMovieList } from '@learn-harmony/movies.models.movie';
-import { ShoppingCartContextProvider, ShoppingCartContext } from './index';
+import { Movie, getRandomMockMovie } from '@learn-harmony/movies.models.movie';
+import { FavouritesContextProvider, CreateFavouritesContext } from './index';
+
+const contextObject = CreateFavouritesContext<Movie>();
 
 const MockUpdateContextComponent = () => {
-  const cartContext = useContext(ShoppingCartContext);
-  const movieIndex = Math.floor(Math.random() * mockMovieList.length);
-  function addProductToCart(){
-    cartContext.AddProductToCart(Movie.fromApiObject(mockMovieList[movieIndex]));
+  const context = useContext(contextObject);
+  
+  function addItemToFavourites(){
+    context.AddToFavourites(Movie.fromApiObject(getRandomMockMovie()));
+    console.log(context.favourites.length)
   }
   return (
     <div>
-      <button onClick={addProductToCart}>add product</button>
+      <button onClick={addItemToFavourites}>add to faves</button>
     </div>
   )
 }
 
-const MockShoppingCartDisplay = () => {
-  const cartContext = useContext(ShoppingCartContext);
+const MockFavesDisplay = () => {
+  const context = useContext(contextObject);
 
   return (
     <div>
-      {cartContext.productsInCart.map(m => {
-        return (
-        <div key={m.imdbID}>
-          {m.title}<br/>
-          {m.posterUrl}
-        </div>
-        )
+      {context.favourites.map(f => {
+        return <div>{f.item.title} - Number of fans: <strong>{f.numOfFans}</strong></div>
       })}
     </div>
   )
 }
 
 export const BasicThemeUsage = () => {
+
   return (
-    <ShoppingCartContextProvider>
+    <FavouritesContextProvider<Movie> idFieldName="imdbID" context={contextObject}>
       <MockUpdateContextComponent />
-      <MockShoppingCartDisplay />
-    </ShoppingCartContextProvider>
+      <MockFavesDisplay />
+    </FavouritesContextProvider>
   );
 };

@@ -20,7 +20,7 @@ export type MovieResponse = {
 
 export type MovieForFavourites = {
   movie: Movie,
-  quantity: number
+  numOfFans: number
 }
 
 export class Movie {

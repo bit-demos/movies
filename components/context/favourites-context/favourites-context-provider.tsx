@@ -1,36 +1,40 @@
-import React, { useState } from 'react';
-import { FavouritesContext, FavouritesContextType } from './favourites-context';
-import { Movie, MovieForFavourites } from '@learn-harmony/movies.models.movie';
+import React, { useState, HTMLAttributes } from 'react';
+import { FavouritesContextType, FavouritesListItem } from './favourites-context';
 
-export function ShoppingCartContextProvider({ children }) {
-  const [faveMovies, setFaveMovies] = useState<MovieForFavourites[]>([]);
+export type FavouritesContextProps<TItemType> = {
+  idFieldName: string,
+  context: React.Context<FavouritesContextType<TItemType>>
+} & HTMLAttributes<HTMLDivElement>
 
-  function findInFavourites(movie: Movie): number{
-    return faveMovies.findIndex(p => p.movie.imdbID === movie.imdbID);
+export function FavouritesContextProvider<TItemType>({ children, idFieldName, context }: FavouritesContextProps<TItemType>) {
+  const [favourites, setFavourites] = useState<FavouritesListItem<TItemType>[]>([]);
+
+  function findInFavourites(item: TItemType): number{
+    return favourites.findIndex(p => p.item[idFieldName] === item[idFieldName]);
   }
 
-  const addToCart = (movie: Movie) => {
-    const index = findInFavourites(movie);
+  const addToFaves = (item: TItemType) => {
+    const index = findInFavourites(item);
     if (index === -1){
-      const newMovie: MovieForFavourites = {movie, quantity:1};
-      setFaveMovies([...faveMovies, newMovie])
+      const newItem: FavouritesListItem<TItemType> = {item, numOfFans:1};
+      setFavourites([...favourites, newItem])
     } else {
-      const updatedFaves = faveMovies;
-      updatedFaves[index] = {movie: faveMovies[index].movie, quantity: faveMovies[index].quantity+1}
-      setProducts(updatedProducts)
+      const updatedFaves = favourites;
+      updatedFaves[index] = {item: favourites[index].item, numOfFans: favourites[index].numOfFans+1}
+      setFavourites(updatedFaves)
     }
   }
 
-  const removeFromCart = (product: Movie) => {
-    const newProductsList = products.filter(p => p.imdbID != product.imdbID)
-    setProducts(newProductsList);
+  const removeFromFaves = (item: TItemType) => {
+    const newFavesList = favourites.filter(m => m.item[idFieldName] != item[idFieldName])
+    setFavourites(newFavesList);
   }
 
-  const contextValue: FavouritesContextType = {
-    favourites: products,
-    AddProductToCart: addToCart,
-    RemoveProductFromCart: removeFromCart
+  const contextValue: FavouritesContextType<TItemType> = {
+    favourites: favourites,
+    AddToFavourites: addToFaves,
+    RemoveFromFavourites: removeFromFaves
   }
-
-  return <FavouritesContext.Provider value={contextValue}>{children}</FavouritesContext.Provider>
+  
+  return <context.Provider value={contextValue}>{children}</context.Provider>
 }

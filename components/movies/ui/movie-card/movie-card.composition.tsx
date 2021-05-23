@@ -12,5 +12,5 @@ const movie = new Movie(
 )
 
 export const MovieCardExample = () => (
-    <MovieCard {...movie}/>
+    <MovieCard movie={movie}/>
 );

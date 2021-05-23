@@ -1,12 +1,11 @@
 import {useState, useEffect} from 'react';
-import { UseResourceResult } from 'react-request-hook';
-import { useContextProvider, ContextResource } from '@learn-harmony/movies.context.api-context-provider';
+import { useApiContextType, ContextResource } from '@learn-harmony/movies.context.api-context-provider';
 
 /**
  * This is a factory for producing apiWithContext hooks. These hooks assume there is a ApiContextProvider provider 
  * from the api-context-provider component being injected into the consuming app
  * 
- * @param apiContext 
+ * @param apiContext
  * should take the format of a function, of return type ContextResource<ApiDataObjectType>, which accepts parameters which are to be configured in the url, 
  * and which returns an axios url object which is to be appended to the context value injected somewhere above in the app
  * For example:
@@ -19,7 +18,7 @@ import { useContextProvider, ContextResource } from '@learn-harmony/movies.conte
  * the the api hook will return in the apiData variable
  */
 export const ApiHookFactory = <TPropType, > (
-  apiContext: (props?:TPropType) => ContextResource<any>,
+  apiContextSetup: useApiContextType<>,
   processData: (data) => any[]
 ): [
   (props: TPropType) => Promise<void>,
@@ -31,7 +30,7 @@ export const ApiHookFactory = <TPropType, > (
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
 
-  const [apiDataResult, getApiData] = useContextProvider(apiContext);
+  const [apiDataResult, getApiData] = useApiContext(apiCallConfig);
 
   useEffect(() => handleDataReturn(), [apiDataResult])
 

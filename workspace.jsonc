@@ -34,6 +34,8 @@
     "packageManager": "teambit.dependencies/yarn",
     "policy": {
       "dependencies": {
+        "@learn-harmony/design.button": "0.0.3",
+        "@teambit/base-ui.elements.dots-loader": "0.6.11",
         "@teambit/base-ui.elements.image": "0.6.8",
         "@teambit/base-ui.layout.grid-component": "0.6.8",
         "@teambit/base-ui.surfaces.card": "0.6.9",
@@ -84,7 +86,7 @@
     "extensions": {
       "teambit.harmony/aspect": {}
     },
-    "{movies/*}, {pages/*}": {
+    "{movies/*}, {pages/*}, !{movies/context/**}": {
       "learn-harmony.movies/extensions/with-preview-react": {},
       "teambit.dependencies/dependency-resolver": {
         "policy": {
@@ -94,20 +96,13 @@
           "devDependencies": {
             "@learn-harmony/movies.context.api-context-provider": "-"
           }
+
+        
         }
       }
     },
     "{base-ui/*}": {
       "teambit.react/react": {}
-    },
-    "components/styling": {
-      "teambit.dependencies/dependency-resolver": {
-        "policy": {
-          "dependencies": {
-            "bootstrap": "4.6.0"
-          }
-        }
-      }
     }
   }
 }

@@ -31,6 +31,12 @@
         "mainFile": "index.ts",
         "rootDir": "components/context/api-context-provider"
     },
+    "context/favourites-context": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "components/context/favourites-context"
+    },
     "context/shopping-cart-context": {
         "scope": "",
         "version": "",
@@ -48,6 +54,12 @@
         "version": "0.0.1",
         "mainFile": "index.ts",
         "rootDir": "components/models/movie"
+    },
+    "movies/context/movies-favourites-context": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "components/movies/context/movies-favourites-context"
     },
     "movies/data/hooks/use-search-movies": {
         "scope": "learn-harmony.movies",
@@ -97,5 +109,5 @@
         "mainFile": "index.ts",
         "rootDir": "components/utils/api-hook-factory"
     },
-    "version": "1.0.70"
+    "version": "1.0.79"
 }

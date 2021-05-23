@@ -1,15 +1,10 @@
-import {useState, useEffect} from 'react';
-import { useContextProvider, ContextResource } from '@learn-harmony/movies.context.api-context-provider';
+import { ContextResource } from '@learn-harmony/movies.context.api-context-provider';
 import { Movie, MovieFromApi, MovieResponse } from '@learn-harmony/movies.models.movie';
 import { ApiHookFactory } from '@learn-harmony/movies.utils.hooks.api-hook-factory';
 
-export type UseSearchProps = {
-  searchStr: string
-}
-
 export const useSearchMovies = () => {
 
-  const apiContext = ({searchStr}: UseSearchProps): ContextResource<MovieResponse> => ({
+  const apiCallConfig = (searchStr: string): ContextResource<MovieResponse> => ({
       params: {
         s: searchStr
       }
@@ -21,5 +16,5 @@ export const useSearchMovies = () => {
     ) : [];
     }
 
-  return ApiHookFactory(apiContext, processData);
+  return ApiHookFactory(apiCallConfig, processData);
 };

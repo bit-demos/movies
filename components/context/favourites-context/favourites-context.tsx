@@ -1,17 +1,22 @@
 import { createContext } from 'react';
-import { Movie, MovieForFavourites } from '@learn-harmony/movies.models.movie';
-import {} from '@learn-harmony/movies.models.movie'
 
-export type FavouritesContextType = {
-  favourites: MovieForFavourites[],
-  AddToFavourites: (movie: Movie) => void,
-  RemoveFromFavourites: (movie: Movie) => void,  
+export type FavouritesListItem<TItemType> = {
+  item: TItemType,
+  numOfFans: number
+}
+
+export type FavouritesContextType <TItemType, > = {
+  favourites: FavouritesListItem<TItemType>[],
+  AddToFavourites: (item: TItemType) => void,
+  RemoveFromFavourites: (item: TItemType) => void,  
 };
 
-const defaultContext: FavouritesContextType = {
+const defaultContext: FavouritesContextType<any> = {
   favourites: [],
   AddToFavourites: () => {},
   RemoveFromFavourites: () => {}
 }
 
-export const FavouritesContext = createContext<FavouritesContextType>(defaultContext);
+export function CreateFavouritesContext<TItemType>(){
+  return createContext<FavouritesContextType<TItemType>>(defaultContext)
+}

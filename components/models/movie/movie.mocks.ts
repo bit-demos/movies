@@ -37,3 +37,8 @@ export const mockMovieList: MovieFromApi[]  = [
     imdbID: "tt0129290"
   }
 ];
+
+export function getRandomMockMovie(){
+  const movieIndex = Math.floor(Math.random() * mockMovieList.length);
+  return mockMovieList[movieIndex];
+}

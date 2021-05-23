@@ -1,12 +1,95 @@
 ---
 description: A context provider to wrap an app that wishes to use the react-request-hook api provider
-labels: ['api', 'context', 'provider', 'axios']
+labels: ['api', 'context', 'provider', 'axios', 'rest', 'RESTful']
 ---
 
-This API provider wraps the [React Request Hook](https://github.com/schettino/react-request-hook)  (credit to [Matheus Schettino](https://github.com/schettino))
-for ease of use in applications which want to create an api provider based on that hook.
+Exports:  
+1. `ApiContextProvider` - the provider end of the api context. Takes in an axios instance with your baseUrl (and any other parameters required for all api calls using the context)
+and provides this base API to any consumers of `useApiContext`.  
+1. `useApiContext` - consumption of the provided context.   
+See usage examples below
+
+### General Overview
+This RESTful API provider wraps the [React Request Hook](https://github.com/schettino/react-request-hook) (credit to [Matheus Schettino](https://github.com/schettino))
+for ease of use in applications which require a rest-ful api provider.
 
 The API provider takes in an axios instance as the API gateway (the hook works with axios only) and creates an api context which can be consumed 
-down the component tree by anyone who subscribes to the context.
+down the component tree by anyone who subscribes to the context. 
+
+You can either use this API context directly, or create a more specific instance (examples for both below). For either usage, you will need to ensure that your context provider is a singleton
+in any components which prescribe to it, otherwise the two 'ends' of the pub-sub connection will not be connected to the same context instance.
+
+### Usage example 1: Direct usage
+
+When using this component directly, you create a provider inside your code and provide it an `axiosInstance` with your API's baseUrl. On the consumer side
+you simply call the exported useResource, add any additional parameters for the api call, and thus create the concrete call function.
+
+``` js title="provider for direct usage"
+app.js
+    import axios from 'axios';
+    import { ApiContextProvider } from '@learn-harmony/movies.context.api-context-provider';
+
+    const axiosInstance = axios.create({
+      baseURL: "someBaseUrl",
+      params: {
+        param1: "paramValue"
+      }
+    });
+
+    ...
+        <ApiContextProvider apiInstance={axiosInstance}>
+            <App />
+        </ApiContextProvider>
+    ...
+```
+``` js title="context consumer side"
+consumer.js
+    import { useApiContext } from '@learn-harmony/movies.context.api-context-provider';
+
+    type SomeResponseType = {
+        data: someDataType,
+        error: someErrorType,
+        ...
+    }
+    
+    const [apiData, apiCall] = useApiContext((searchStr: string): ContextResource<SomeResponseType> => ({
+            params: {
+                s: searchStr
+            }
+        })
+    );
+```
+
+### Usage example 2: Create a concrete provider to be used in the code
+
+Create a concrete usage example with pre-filled default url and parameters, with both provider and a useContext-like consumer function to be used at either end of the context.
+
+``` js title=""
+import React, {ReactNode} from 'react';
+import axios from 'axios';
+import { ApiContextProvider, useApiContext} from '@learn-harmony/movies.context.api-context-provider';
+
+const defaultBaseUrl = 'https://www.omdbapi.com';
+const defaultApiKey = '35fdde3e';
+
+export type MovieApiContextProps = {
+    baseUrl: string;
+    apiKey: string;
+    children: ReactNode;
+}
+
+export function MovieApiContextProvider({ baseUrl, apiKey, children}: MovieApiContextProps){
+    const axiosInstance = axios.create({
+        baseURL: baseUrl || defaultBaseUrl,
+        params: {
+        apikey: apiKey || defaultApiKey
+        }
+    });
+    return <ApiContextProvider apiInstance={axiosInstance}>{children}</ApiContextProvider>
+}
+
+export const UseMovieContext = useApiContext;
+
+```
 
 

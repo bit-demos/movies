@@ -1,2 +1,2 @@
-export { ApiContextProvider, useContextProvider } from './api-context-provider';
-export type { ApiContextProviderProps, ContextResource } from './api-context-provider';
+export { ApiContextProvider, useApiContext } from './api-context-provider';
+export type { ApiContextProviderProps, ContextResource, useApiContextType } from './api-context-provider';

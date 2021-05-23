@@ -3,23 +3,16 @@ import { render } from '@testing-library/react';
 import { expect } from 'chai';
 
 import { Card, defaultProps } from './card';
+import { CardWithText, c, CardWithLink } from './card.compositions';
 
 it('should render with children', () => {
-	const children = (
-		<a  href="#" onClick={() => {return false}} aria-label="A useful link description goes here">
-                        Some interesting link text
-                    </a>
-	)
-	const img = "https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero.jpg";
-	const { getByText } = render(<Card img={img}>{children}</Card>);
+	const { getByText } = render(<CardWithLink />);
 	const rendered = getByText('Some interesting link text');
 	expect(rendered).to.exist;
 });
 
 it('should display default image when none is supplied', () => {
-	const children = "some child text";
-	render(<Card img={undefined}>{children}</Card>);
+	render(<CardWithText />);
 	const displayedImage = document.querySelector("img");
-
 	expect(displayedImage.src).to.equal(defaultProps.img);
 });
