@@ -1,14 +1,14 @@
 import React, {useContext} from 'react';
-import { ShoppingCartContext } from '@learn-harmony/movies.context.shopping-cart-context'
+import { MovieFavouritesContext } from '@learn-harmony/movies.movies.context.movies-favourites-context'
 import { MovieCardGrid } from '@learn-harmony/movies.movies.ui.movie-card-grid';
 
 export function Favourites() {
 
-  const cartContext = useContext(ShoppingCartContext);
+  const favesContext = useContext(MovieFavouritesContext);
 
  return (
    <div>
-     <MovieCardGrid list={cartContext.productsInCart} />
+     <MovieCardGrid list={favesContext.favourites.map(f => f.item)} />
    </div>
  )
 }
