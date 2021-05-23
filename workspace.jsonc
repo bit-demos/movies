@@ -91,10 +91,10 @@
       "teambit.dependencies/dependency-resolver": {
         "policy": {
           "dependencies": {
-            "@learn-harmony/movies.context.api-context-provider": "-"
+            "@learn-harmony/movies.context.movies-api-context": "-"
           },
           "devDependencies": {
-            "@learn-harmony/movies.context.api-context-provider": "-"
+            "@learn-harmony/movies.context.movies-api-context": "-"
           }
 
         
