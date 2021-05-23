@@ -15,7 +15,7 @@ export const SearchMoviesWithInput = () => {
             {movies && movies.map(movie => {
                 return (
                     <div key={movie.imdbID}>
-                        <MovieCard {...movie} />
+                        <MovieCard movie={movie}/>
                     </div>
                     )
                 }

@@ -1,7 +1,21 @@
 ---
-description: ShoppingCartContext context.
-labels: ['context']
+description: Generic favourites context for managing favourites across an application
+labels: ['context', 'favorites', 'generic']
 ---
+
+#### Overview
+
+Generic factory for creating a favourites context for `TItem` type.
+
+Includes functions for managing favourites:
+1. `AddToFavourites` - function for adding to the favourites 
+1. `RemoveFromFavourites` - function for removing item from the favourites
+
+Also exposes the `favourites` object for accessing the current state of the favourites data.
+
+See compositions for a usage example
+
+
 
 
 
