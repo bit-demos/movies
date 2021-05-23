@@ -37,12 +37,6 @@
         "mainFile": "index.ts",
         "rootDir": "components/context/favourites-context"
     },
-    "context/shopping-cart-context": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "components/context/shopping-cart-context"
-    },
     "extensions/with-preview-react": {
         "scope": "learn-harmony.movies",
         "version": "0.0.1",
@@ -54,6 +48,12 @@
         "version": "0.0.1",
         "mainFile": "index.ts",
         "rootDir": "components/models/movie"
+    },
+    "movies/context/movies-api-context": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.tsx",
+        "rootDir": "components/movies/context/movies-api-context"
     },
     "movies/context/movies-favourites-context": {
         "scope": "",
@@ -85,11 +85,11 @@
         "mainFile": "index.ts",
         "rootDir": "components/movies/ui/movie-card-grid"
     },
-    "pages/shopping-cart": {
+    "pages/favourites": {
         "scope": "",
         "version": "",
         "mainFile": "index.ts",
-        "rootDir": "components/pages/shopping-cart"
+        "rootDir": "components/pages/favourites"
     },
     "theme/alt-theme": {
         "scope": "learn-harmony.movies",
@@ -109,5 +109,5 @@
         "mainFile": "index.ts",
         "rootDir": "components/utils/api-hook-factory"
     },
-    "version": "1.0.79"
+    "$schema-version": "14.9.0"
 }
