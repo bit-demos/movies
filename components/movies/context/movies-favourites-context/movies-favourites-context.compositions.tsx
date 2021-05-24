@@ -1,7 +1,6 @@
 import React, {useContext} from 'react';
 import { Button } from '@learn-harmony/design.button';
 import { Movie, getRandomMockMovie } from '@learn-harmony/movies.models.movie';
-import { MovieCardGrid } from '@learn-harmony/movies.movies.ui.movie-card-grid';
 import { MovieFavouritesContext, MoviesFavouritesContextProvider} from './index';
 import styles from './movies-favourites-context.module.scss';
 
