@@ -6,25 +6,17 @@ description: 'A ApiHookFactory component.'
 ### Overview
 
 The ApiHookFactory allows creation of rest api hooks to consume any api context based on a provider utilising ApiContextProvider's provider factory.
+The factory connects to the `useApiContext` of any api context which is based on the [rest-ful API context provider component](@learn-harmony/movies.context.api-context-provider),
+and returns four items for managaing the API calls:
+1. `apiCall` - the function which actually does the API call
+1. `apiData` - the result of the API call
+1. `isLoading` - true while the `apiCall` function is waiting to return
+1. `error` - holds any errors returned by the API call
 
 To create a hook using this factory, supply it with two parameters:
+1. `apiCallConfig` - a `ContextConfigFunction` (see the api context provider linked to above), this function sets the parameters expected for the api call and  how
+to stitch them into the url.
+1. `processData` - the function which will be used to process the raw api data to produce the desired output data from the hook
 
 
-
-
-import { ApiHookFactory } from './api-hook-factory';
-
-ApiHookFactory example:
-
-A simple ApiHookFactory component with some text
-
-Code Snippet:
-```js
-<ApiHookFactory text="hello from ApiHookFactory" />
-```
-
-
-Live Playground:
-```js live
-<ApiHookFactory text="hello from ApiHookFactory" />
-```
+See this component's compositions for an end-to-end usage example for creating a concrete hook with this factory.
