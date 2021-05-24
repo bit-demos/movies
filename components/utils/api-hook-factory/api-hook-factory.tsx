@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react';
-import { useApiContext, ContextResource } from '@learn-harmony/movies.context.api-context-provider';
+import { useApiContext, ContextConfigFunction } from '@learn-harmony/movies.context.api-context-provider';
 
 /**
  * This is a factory for producing apiWithContext hooks. These hooks assume there is a ApiContextProvider provider 
@@ -17,17 +17,17 @@ import { useApiContext, ContextResource } from '@learn-harmony/movies.context.ap
  * @param processData function which takes as a parameter the data object from the axios api call and processes it. Output will be in the format that
  * the the api hook will return in the apiData variable
  */
-export const ApiHookFactory = <TPropType, > (
-  apiCallConfig: (props?:TPropType) => ContextResource<any>,
-  processData: (data) => any[],
+export const ApiHookFactory = <TParamsType, TApiReturnType, TResultType> (
+  apiCallConfig: ContextConfigFunction<TParamsType, TApiReturnType>,
+  processData: (data) => TResultType[],
   overrideUseContext?: any // should be used if you know you want to override the useContext instance. 
 ): [
-  (props: TPropType) => Promise<void>,
-  any[],
+  (props: TParamsType) => Promise<void>,
+  TResultType[],
   boolean,
   string,
 ] => {
-  const [apiData, setApiData] = useState([]);
+  const [apiData, setApiData] = useState<TResultType[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
 
@@ -53,7 +53,7 @@ export const ApiHookFactory = <TPropType, > (
     setIsLoading(false);
   }
 
-  const apiCall = async (props: TPropType) => {
+  const apiCall = async (props: TParamsType) => {
     if (!props) return;
 
     setIsLoading(true);
