@@ -10,7 +10,7 @@ export const useSearchMovies = () => {
       }
     });
 
-    const processData = (data) =>  {
+    const processData = (data) : Movie[] =>  {
        return data.Search && data.Search.length ? data.Search.map(
       (m: MovieFromApi) => Movie.fromApiObject(m)
     ) : [];

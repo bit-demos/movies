@@ -8,6 +8,7 @@ export type ApiContextProviderProps = {
 }
 
 export const useApiContext = useResource;
+export type ContextConfigFunction<TPropsType, TReturnType> = (props?:TPropsType) => ContextResource<TReturnType>;
 export type useApiContextType<TRequest extends Request> = UseResourceResult<TRequest>;
 export interface ContextResource<TPayload> extends Resource<TPayload>{};
 
