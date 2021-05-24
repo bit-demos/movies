@@ -9,7 +9,7 @@ import { Button } from './button';
 it('should render with children', () => {
 	const { getByText } = render(<Button>Click</Button>);
 	const rendered = getByText('Click');
-	expect(rendered).to.not.exist;
+	expect(rendered).to.exist;
 });
 
 it('should trigger onClick', () => {
