@@ -24,7 +24,7 @@ export class WithPreviewReactMain {
 
   static async provider([react, envs]: [ReactMain, EnvsMain]) {
     const withPreviewReactEnv = envs.compose(react.reactEnv, [
-        react.overrideJestConfig(require.resolve('./jest/jest.config')),
+        // react.overrideJestConfig(require.resolve('./jest/jest.config')),
         react.overrideDependencies({
           dependencies: {
             '@learn-harmony/movies.context.movies-api-context': '-'
