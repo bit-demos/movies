@@ -21,7 +21,7 @@ function exampleMoviesHook(){
     return ApiHookFactory(apiCallConfig, processData);
 }
 
-export const BasicApiHookFactory = () => {
+export const BasicFactoryProducedHookMovies = () => {
 
     // use new hook
     const [getMovies, movies, isLoading, error] = exampleMoviesHook();

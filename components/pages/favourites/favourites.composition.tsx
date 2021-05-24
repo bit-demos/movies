@@ -6,18 +6,22 @@ import { Favourites } from './favourites';
 
 export const FavouritesWithMovieCard = () => {
   return (
-    <>
+    <div style={{display: "flex", flexDirection: "column"}}>
       <MovieCard key="movie1" movie={Movie.fromApiObject(mockMovieList[0])}/>
+      <hr />
+      <div>Favourites:</div>
       <Favourites />
-    </>
+    </div>
   )
 }
  
 export const FavouritesWithSearch = () => {
 
   return (
-  <div>
+  <div style={{display: "flex", flexDirection: "column"}}>
     <MoviesSearch />
+    <hr />
+    <div>Favourites:</div>
     <Favourites />
   </div>
   )
