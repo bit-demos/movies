@@ -19,10 +19,9 @@ export const FavouritesWithSearch = () => {
 
   return (
   <div style={{display: "flex", flexDirection: "column"}}>
-    <MoviesSearch />
+    <div>Favourites:</div><Favourites />
     <hr />
-    <div>Favourites:</div>
-    <Favourites />
+    <MoviesSearch />
   </div>
   )
 };

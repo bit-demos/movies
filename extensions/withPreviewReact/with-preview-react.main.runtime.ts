@@ -4,7 +4,7 @@ import { ReactAspect, ReactMain } from '@teambit/react';
 import { WithPreviewReactAspect } from './with-preview-react.aspect';
 import {} from '@learn-harmony/movies.context.api-context-provider'
 
-const jestConfig = require('./jest/jest.config');
+const jestConfig = require.resolve('./jest/jest.config');
 
 export class WithPreviewReactMain {
   constructor(private react: ReactMain) {}
@@ -24,7 +24,7 @@ export class WithPreviewReactMain {
 
   static async provider([react, envs]: [ReactMain, EnvsMain]) {
     const withPreviewReactEnv = envs.compose(react.reactEnv, [
-        // react.overrideJestConfig(require.resolve('./jest/jest.config')),
+        react.overrideJestConfig(jestConfig),
         react.overrideDependencies({
           dependencies: {
             '@learn-harmony/movies.context.movies-api-context': '-'
