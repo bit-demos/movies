@@ -34,7 +34,7 @@
     "packageManager": "teambit.dependencies/yarn",
     "policy": {
       "dependencies": {
-        "@learn-harmony/design.button": "^.0.3",
+        "@learn-harmony/design.button": "^0.0.3",
         "@teambit/base-ui.elements.dots-loader": "^0.6.11",
         "@teambit/base-ui.elements.image": "^0.6.8",
         "@teambit/base-ui.elements.label": "^0.6.11",

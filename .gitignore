@@ -107,3 +107,6 @@ dist
 public/bit
 
 .DS_Store
+
+#vscode history
+.history
