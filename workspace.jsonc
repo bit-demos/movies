@@ -90,6 +90,7 @@
     },
     "{movies/*}, {pages/*}, !{movies/context/**}": {
       "learn-harmony.movies/extensions/with-preview-react": {},
+      "teambit.react/react": "-",
       "teambit.dependencies/dependency-resolver": {
         "policy": {
           "dependencies": {

@@ -4,7 +4,7 @@ import { ReactAspect, ReactMain } from '@teambit/react';
 import { WithPreviewReactAspect } from './with-preview-react.aspect';
 import {} from '@learn-harmony/movies.context.api-context-provider'
 
-const jestConfig = require.resolve('./jest/jest.config');
+const jestConfig = require.resolve('./jest/jest.config.js');
 
 export class WithPreviewReactMain {
   constructor(private react: ReactMain) {}
