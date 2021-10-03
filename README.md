@@ -1,11 +1,48 @@
 # harmony-demo-movies
 Demo project showcasing a variety of component types built with Bit Harmony
 
-To run the project:
+# Movies Demo - bit component showcase in React
 
-1. Make sure you have the latest version of Bit Harmony installed on your computer - [installation instructions](https://harmony-docs.bit.dev/getting-started/installing-bit)
-1. The installation process will tell you at the end what the binary alias for bit harmony is for CLI commands - usually it's `bit` (unless you have a legacy version already installed, then it's most likely `bbit`)
-1. in the root of this project, run `bit install` (or whatever your bit Harmony alias is) and then when that finishes, run `bit compile`. Dont worry if there's an error in either of those - known issue, if it goes away when you run `bit compile` again then it's just something we need to deal with better.
-1. Once the above commands pass, run `bit start` to start the local dev server and UI. Then navigate to the localhost address in the terminal once the server is ready
+The movies repo is a react-based demo project showcasing a wide variety of component use-cases with examples of how to implement:
 
+1. Regular UI components, with and without theming
+1. React hooks
+1. React Context
+1. including a generic React Context Factory
+1. css-only components
+1. A custom development environment, based on bit's core `react` env - including overrides of webpace, ts, and jest configurations, as well as some env-defined dependency configurations for components using the env.
 
+<img width="1124" alt="CleanShot 2021-08-10 at 23 26 40@2x" src="https://user-images.githubusercontent.com/13063165/128937364-5c814d60-7538-4e00-8571-31ad3020bae6.png">
+
+Exported components can be seen [here](https://bit.dev/learn-bit-react/movies)
+
+<img width="1788" alt="CleanShot 2021-08-10 at 19 48 13@2x" src="https://user-images.githubusercontent.com/13063165/128909487-9f256996-d321-4fac-b5d6-836daa34bb4e.png">
+
+If you would like to import(clone) the project to take it for a test run make sure you have [bit installed](https://harmony-docs.bit.dev/getting-started/installing-bit).
+
+```bash
+npm i -g @teambit/bvm
+bvm install
+```
+
+Create an empty workspace - the second argument after `new` is the workspace name, and is up to you (skip this step if you want to import the components into an already created workspace)
+
+```bash
+bit new react movies --empty
+```
+
+Use the `bit import` command to import all components into your workspace. This is similar to cloning a project.
+
+```bash
+bit import "learn-bit-react.movies/*"
+```
+
+Copy the `workspace.jsonc` file from this repository and replace the one in your workspace. This will ensure you have the correct dependencies and environments set.
+
+Start the dev server
+
+```bash
+bit start
+```
+
+You should now see all the ecommerce components on [localhost:3000](http://localhost:3000)
