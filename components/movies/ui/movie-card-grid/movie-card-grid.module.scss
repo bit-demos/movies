@@ -3,9 +3,5 @@
     align-items: stretch; 
     flex-wrap: wrap;
     justify-content: center;
-    height: 500px;
-}
-
-.movie-card {
-    margin: 0px 10px;
+    min-height: 500px;
 }

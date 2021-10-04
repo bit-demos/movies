@@ -1,8 +1,8 @@
 // @ts-ignore
 import React, {useState, useEffect} from 'react';
 import cs from 'classnames';
-import {Input} from '@learn-harmony/movies.base-ui.input';
-import {PrimaryButton} from '@learn-harmony/movies.base-ui.button';
+import {Input} from '@learn-bit-react/movies.base-ui.input';
+import {PrimaryButton} from '@learn-bit-react/movies.base-ui.button';
 
 import styles from "./search-box-with-button.module.scss";
 

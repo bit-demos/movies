@@ -1,6 +1,6 @@
-import { ContextResource } from '@learn-harmony/movies.context.api-context-provider';
-import { Movie, MovieFromApi, MovieResponse } from '@learn-harmony/movies.models.movie';
-import { ApiHookFactory } from '@learn-harmony/movies.utils.hooks.api-hook-factory';
+import { ContextResource } from '@learn-bit-react/movies.context.api-context-provider';
+import { Movie, MovieFromApi, MovieResponse } from '@learn-bit-react/movies.models.movie';
+import { ApiHookFactory } from '@learn-bit-react/movies.utils.hooks.api-hook-factory';
 
 export const useSearchMovies = () => {
 

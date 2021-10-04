@@ -1,10 +1,10 @@
 // @ts-ignore
 import React, {useContext} from 'react';
 import cs from 'classnames';
-import { MovieFavouritesContext } from '@learn-harmony/movies.movies.context.movies-favourites-context';
-import {PrimaryButton} from '@learn-harmony/movies.base-ui.button';
-import { Card } from '@learn-harmony/movies.base-ui.card';
-import {Movie} from '@learn-harmony/movies.models.movie';
+import { MovieFavouritesContext } from '@learn-bit-react/movies.movies.context.movies-favourites-context';
+import {PrimaryButton} from '@learn-bit-react/movies.base-ui.button';
+import { Card } from '@learn-bit-react/movies.base-ui.card';
+import {Movie} from '@learn-bit-react/movies.models.movie';
 // @ts-ignore
 import styles from './movie-card.module.scss';
 

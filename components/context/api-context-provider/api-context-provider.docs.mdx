@@ -27,7 +27,7 @@ you simply call the exported useResource, add any additional parameters for the 
 ``` js title="provider for direct usage"
 app.js
     import axios from 'axios';
-    import { ApiContextProvider } from '@learn-harmony/movies.context.api-context-provider';
+    import { ApiContextProvider } from '@learn-bit-react/movies.context.api-context-provider';
 
     const axiosInstance = axios.create({
       baseURL: "someBaseUrl",
@@ -44,7 +44,7 @@ app.js
 ```
 ``` js title="context consumer side"
 consumer.js
-    import { useApiContext } from '@learn-harmony/movies.context.api-context-provider';
+    import { useApiContext } from '@learn-bit-react/movies.context.api-context-provider';
 
     type SomeResponseType = {
         data: someDataType,
@@ -67,7 +67,7 @@ Create a concrete usage example with pre-filled default url and parameters, with
 ``` js title=""
 import React, {ReactNode} from 'react';
 import axios from 'axios';
-import { ApiContextProvider, useApiContext} from '@learn-harmony/movies.context.api-context-provider';
+import { ApiContextProvider, useApiContext} from '@learn-bit-react/movies.context.api-context-provider';
 
 const defaultBaseUrl = 'https://www.omdbapi.com';
 const defaultApiKey = '35fdde3e';

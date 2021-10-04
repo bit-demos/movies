@@ -5,7 +5,7 @@ labels: ['api', 'context', 'provider', 'movies', 'axios', 'rest', 'RESTful']
 
 ### Overview
 
-This component is a concrete example of the [api context provider component](https://bit.dev/learn-harmony/movies/context/api-context-provider), with pre-populated
+This component is a concrete example of the [api context provider component](https://bit.dev/learn-bit-react/movies/context/api-context-provider), with pre-populated
 baseurl and api key.
 
 These can both be overriden, for instance when wanting to test out a different data environment for the movies api (pre-production, laboratory, etc).
@@ -16,7 +16,7 @@ Provider side
 ``` js
 app.js
 
-import { MovieApiContextProvider } from '@learn-harmony/movies.movies.context.movies-api-context';
+import { MovieApiContextProvider } from '@learn-bit-react/movies.movies.context.movies-api-context';
 
 ...
     <MovieApiContextProvider baseUrl={config.baseUrl} apiKey={config.apiKey}>
@@ -27,7 +27,7 @@ import { MovieApiContextProvider } from '@learn-harmony/movies.movies.context.mo
 
 Consumer side:
 ```
-import { MovieApiContextProvider } from '@learn-harmony/movies.movies.context.movies-api-context';
+import { MovieApiContextProvider } from '@learn-bit-react/movies.movies.context.movies-api-context';
 
 
 

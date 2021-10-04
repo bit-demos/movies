@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Movie, getRandomMockMovie } from '@learn-harmony/movies.models.movie';
+import { Movie, getRandomMockMovie } from '@learn-bit-react/movies.models.movie';
 import { FavouritesContextProvider, CreateFavouritesContext } from './index';
 
 const contextObject = CreateFavouritesContext<Movie>();

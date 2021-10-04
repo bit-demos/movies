@@ -1,6 +1,6 @@
 import React from 'react'
-import { FavouritesContextProvider, CreateFavouritesContext } from '@learn-harmony/movies.context.favourites-context'
-import { Movie } from '@learn-harmony/movies.models.movie'
+import { FavouritesContextProvider, CreateFavouritesContext } from '@learn-bit-react/movies.context.favourites-context'
+import { Movie } from '@learn-bit-react/movies.models.movie'
 
 export const MovieFavouritesContext = CreateFavouritesContext<Movie>();
 

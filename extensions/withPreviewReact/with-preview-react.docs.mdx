@@ -9,14 +9,14 @@ A standard React development environment for building and rendering modular and 
 
 ### Usage instructions
 
-Create a **variant** in project's `workspace.json` file.  
+Create a **variant** in project's `workspace.jsonc` file.  
 Set this extension as the variant's environment, for instance for the variant "any components in the 'ui' namespace":
 
 ```json
 {
    "teambit.workspace/variants": {
-     "{ui/*}": {
-       "learn-harmony.movies/extensions/with-preview-react": {}
+     "{ui/**}": {
+       "learn-bit-react.movies/extensions/with-preview-react": {}
      }
    }
 }

@@ -16,25 +16,25 @@
     }
     
     &.primary{
-        border: 1px solid var(--bg-topping);
-        background-color: var(--bg-topping);
-        color: var(--primary-button-text, var(--base-color));
+        border: 1px solid var(--bit-bg-color, white);
+        background-color: var(--bit-bg-color, white);
+        color: var(-bit-accent-color, #6c5ce7);
 
         &:hover:not(:disabled) {
-            border: 1px solid var(--bg-topping-highlight);
-            background-color: var(--bg-topping-highlight);
-            color: var(--base-highlight);
+			border: 1px solid var(--bit-bg-heavy, white);
+			background-color: var(--bit-bg-heavy, white);
+			color: var(--bit-accent-heavy, #5d4aec);
         }
     }
 
     &.cta{
-		border: 1px solid var(--cta-color, var(--base-color, #6c5ce7));
-		background-color: var(--cta-color, var(--base-color, #6c5ce7));
-		color: var(--cta-button-text, white);
+		border: 1px solid var(--bit-accent-color, #6c5ce7);
+		background-color: var(--bit-accent-color, #6c5ce7);
+		color: var(--bit-text-on-accent, white);
 
 		&:hover:not(:disabled) {
-			border: 1px solid var(--cta-highlight, var(--base-highlight, #5d4aec));
-			background-color: var(--cta-highlight, var(--base-highlight, #5d4aec));
+			border: 1px solid var(--bit-accent-heavy, #5d4aec);
+			background-color: var(--bit-accent-heavy, #5d4aec);
 		}
 	}
 

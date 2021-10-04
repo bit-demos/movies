@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
-import { Input } from '@learn-harmony/movies.base-ui.input';
-import { PrimaryButton } from '@learn-harmony/movies.base-ui.button';
-import { MovieCard } from '@learn-harmony/movies.movies.ui.movie-card';
+import { Input } from '@learn-bit-react/movies.base-ui.input';
+import { PrimaryButton } from '@learn-bit-react/movies.base-ui.button';
+import { MovieCard } from '@learn-bit-react/movies.movies.ui.movie-card';
 import { useSearchMovies } from './index';
 
 export const SearchMoviesWithInput = () => {

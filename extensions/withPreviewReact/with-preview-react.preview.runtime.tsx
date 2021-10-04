@@ -3,10 +3,10 @@ import axios from 'axios';
 import { PreviewRuntime } from '@teambit/preview';
 import { ReactAspect, ReactPreview } from '@teambit/react';
 import { Aspect } from '@teambit/harmony';
-import { ThemeContext } from '@learn-harmony/movies.theme.theme-context';
-// import { ApiContextProvider } from '@learn-harmony/movies.context.api-context-provider';
-import { MovieApiContextProvider } from '@learn-harmony/movies.movies.context.movies-api-context';
-import { MoviesFavouritesContextProvider } from '@learn-harmony/movies.movies.context.movies-favourites-context';
+import { ThemeContext } from '@learn-bit-react/movies.theme.theme-context';
+// import { ApiContextProvider } from '@learn-bit-react/movies.context.api-context-provider';
+import { MovieApiContextProvider } from '@learn-bit-react/movies.movies.context.movies-api-context';
+import { MoviesFavouritesContextProvider } from '@learn-bit-react/movies.movies.context.movies-favourites-context';
 import { WithPreviewReactConfig, WithPreviewReactAspect } from './with-preview-react.aspect';
 
 export class WithPreviewReactPreview {

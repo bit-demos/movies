@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Label } from '@teambit/base-ui.elements.label';
-import { Movie, MovieFromApi, MovieResponse } from '@learn-harmony/movies.models.movie';
-import { ContextResource } from '@learn-harmony/movies.context.api-context-provider';
+import { Movie, MovieFromApi, MovieResponse } from '@learn-bit-react/movies.models.movie';
+import { ContextResource } from '@learn-bit-react/movies.context.api-context-provider';
 import { ApiHookFactory } from './api-hook-factory';
 
 // implement concrete hook from the factory

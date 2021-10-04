@@ -7,7 +7,7 @@ export type WithPreviewReactConfig = {
 };
 
 export const WithPreviewReactAspect = Aspect.create({
-  id: 'teambit.use-case-examples/envs.with-preview',
+  id: 'learn-bit-harmony.movies/extensions.with-preview-react',
   defaultConfig: {
     baseMoviesUrl: undefined,
     apiKey: undefined

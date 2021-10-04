@@ -2,7 +2,6 @@ import { MainRuntime } from '@teambit/cli';
 import { EnvsAspect, EnvsMain } from '@teambit/envs';
 import { ReactAspect, ReactMain } from '@teambit/react';
 import { WithPreviewReactAspect } from './with-preview-react.aspect';
-import {} from '@learn-harmony/movies.context.api-context-provider'
 
 const jestConfig = require.resolve('./jest/jest.config.js');
 
@@ -27,13 +26,13 @@ export class WithPreviewReactMain {
         react.overrideJestConfig(jestConfig),
         react.overrideDependencies({
           dependencies: {
-            '@learn-harmony/movies.context.movies-api-context': '-'
+            '@learn-bit-react/movies.movies.context.movies-api-context': '-'
           },
           devDependencies: {
-            '@learn-harmony/movies.context.movies-api-context': '-'
+            '@learn-bit-react/movies.movies.context.movies-api-context': '-'
           },
           peerDependencies: {
-            '@learn-harmony/movies.context.movies-api-context': {
+            '@learn-bit-react/movies.movies.context.movies-api-context': {
               version: 'latest',
               resolveFromEnv: true,
             },

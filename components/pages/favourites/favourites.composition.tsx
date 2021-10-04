@@ -1,7 +1,7 @@
 import React from 'react';
-import { MoviesSearch } from '@learn-harmony/movies.movies.movies-search';
-import { MovieCard } from '@learn-harmony/movies.movies.ui.movie-card';
-import { mockMovieList, Movie } from '@learn-harmony/movies.models.movie';
+import { MoviesSearch } from '@learn-bit-react/movies.movies.movies-search';
+import { MovieCard } from '@learn-bit-react/movies.movies.ui.movie-card';
+import { mockMovieList, Movie } from '@learn-bit-react/movies.models.movie';
 import { Favourites } from './favourites';
 
 export const FavouritesWithMovieCard = () => {

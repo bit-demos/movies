@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react';
-import { useApiContext, ContextConfigFunction } from '@learn-harmony/movies.context.api-context-provider';
+import { useApiContext, ContextConfigFunction } from '@learn-bit-react/movies.context.api-context-provider';
 
 /**
  * This is a factory for producing apiWithContext hooks. These hooks assume there is a ApiContextProvider provider 

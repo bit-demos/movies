@@ -1,7 +1,7 @@
 import React, {ReactNode} from 'react';
 import axios from 'axios';
-import { MovieResponse } from '@learn-harmony/movies.models.movie';
-import { ApiContextProvider, useApiContext, ContextResource } from '@learn-harmony/movies.context.api-context-provider';
+import { MovieResponse } from '@learn-bit-react/movies.models.movie';
+import { ApiContextProvider, useApiContext, ContextResource } from '@learn-bit-react/movies.context.api-context-provider';
 
 const defaultBaseUrl = 'https://www.omdbapi.com';
 const defaultApiKey = '35fdde3e';

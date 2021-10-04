@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
-import { MovieFavouritesContext } from '@learn-harmony/movies.movies.context.movies-favourites-context'
-import { MovieCardGrid } from '@learn-harmony/movies.movies.ui.movie-card-grid';
+import { MovieFavouritesContext } from '@learn-bit-react/movies.movies.context.movies-favourites-context'
+import { MovieCardGrid } from '@learn-bit-react/movies.movies.ui.movie-card-grid';
 
 export function Favourites() {
 
