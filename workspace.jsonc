@@ -22,7 +22,7 @@
     /**
      * default scope for all components in workspace.
      **/
-    "defaultScope": "learn-harmony.movies"
+    "defaultScope": "learn-bit-react.movies"
   },
   /**
    * main configuration for component dependency resolution.
@@ -34,20 +34,20 @@
     "packageManager": "teambit.dependencies/yarn",
     "policy": {
       "dependencies": {
-        "@learn-harmony/design.button": "^0.0.3",
-        "@teambit/base-ui.elements.dots-loader": "^0.6.11",
-        "@teambit/base-ui.elements.image": "^0.6.8",
-        "@teambit/base-ui.elements.label": "^0.6.11",
-        "@teambit/base-ui.input.button": "^0.6.12",
-        "@teambit/base-ui.layout.grid-component": "^0.6.8",
-        "@teambit/base-ui.surfaces.card": "^0.6.9",
-        "@teambit/base-ui.theme.brand-definition": "^0.6.8",
-        "@teambit/base-ui.theme.color-definition": "^0.6.8",
-        "@teambit/base-ui.theme.colors": "^0.6.8",
-        "@teambit/base-ui.theme.fonts.book": "^0.6.7",
-        "@teambit/base-ui.theme.heading-margin-definition": "^0.6.8",
-        "@teambit/base-ui.theme.size-definition": "^0.6.7",
-        "@teambit/base-ui.theme.theme-provider": "^0.6.3",
+        "@teambit/base-ui.elements.dots-loader": "^1.0.0",
+        "@teambit/base-ui.elements.image": "^1.0.0",
+        "@teambit/base-ui.elements.label": "^1.0.0",
+        "@teambit/base-ui.input.button": "^1.0.0",
+        "@teambit/base-ui.layout.grid-component": "^1.0.0",
+        "@teambit/base-ui.surfaces.card": "^1.0.0",
+        "@teambit/base-ui.theme.brand-definition": "^1.0.0",
+        "@teambit/base-ui.theme.color-definition": "^1.0.0",
+        "@teambit/base-ui.theme.colors": "^1.0.0",
+        "@teambit/base-ui.theme.fonts.book": "^1.0.0",
+        "@teambit/base-ui.theme.heading-margin-definition": "^1.0.0",
+        "@teambit/base-ui.theme.size-definition": "^1.0.0",
+        "@teambit/base-ui.theme.theme-provider": "^1.0.0",
+        "@teambit/dependencies.modules.packages-excluder": "0.0.9",
         "@testing-library/react": "^10.4.7",
         "@types/classnames": "^2.2.11",
         "@types/react": "16.9.43 || ^17.0.0",
@@ -70,7 +70,9 @@
     "devFilePatterns": [
       "**/*.spec.ts"
     ],
-    "strictPeerDependencies": true
+    "strictPeerDependencies": true,
+    "installFromBitDevRegistry": true,
+    "savePrefix": ""
   },
   /**
    * workspace variants allow to set different subsets of configuration for components in your workspace.
@@ -88,21 +90,21 @@
     "extensions": {
       "teambit.harmony/aspect": {}
     },
-    "{movies/*}, {pages/*}, !{movies/context/**}": {
-      "learn-harmony.movies/extensions/with-preview-react": {},
-      "teambit.react/react": "-",
-      "teambit.dependencies/dependency-resolver": {
-        "policy": {
-          "dependencies": {
-            "@learn-harmony/movies.movies.context.movies-api-context": "-"
-          },
-          "devDependencies": {
-            "@learn-harmony/movies.movies.context.movies-api-context": "-"
-          }
-        }
-      }
+    "{movies/**}, {pages/**}, !{movies/context/**}": {
+      "learn-bit-react.movies/extensions/with-preview-react": {},
+      "teambit.react/react": "-"
+      // "teambit.dependencies/dependency-resolver": {
+      //   "policy": {
+      //     "dependencies": {
+      //       "@learn-bit-react/movies.movies.context.movies-api-context": "-"
+      //     },
+      //     "devDependencies": {
+      //       "@learn-bit-react/movies.movies.context.movies-api-context": "-"
+      //     }
+      //   }
+      // }
     },
-    "{base-ui/*}": {
+    "{base-ui/**}": {
       "teambit.react/react": {}
     }
   }
