@@ -1,6 +1,3 @@
-# harmony-demo-movies
-Demo project showcasing a variety of component types built with Bit Harmony
-
 # Movies Demo - bit component showcase in React
 
 The movies repo is a react-based demo project showcasing a wide variety of component use-cases with examples of how to implement:
