@@ -24,12 +24,14 @@ export const PrimaryButton = ({
                                   className = "",
                                   onClick,
                                   children,
+                                  type,
                                   ...rest
                               }: ButtonProps) => {
     return (
         <Button
             className={cs(styles.primary, className)}
             onClick={onClick}
+            type={type}
             {...rest}
         >
             {children}

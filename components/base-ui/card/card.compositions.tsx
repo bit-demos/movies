@@ -1,5 +1,7 @@
 // @ts-ignore
 import React from 'react';
+import { ThemeContext } from '@learn-bit-react/movies.theme.theme-context';
+import { altTheme } from '@learn-bit-react/movies.theme.alt-theme';
 import {Card} from './index';
 
 const cardWithContent = (children, img?) => {
@@ -28,3 +30,23 @@ export const CardWithText = () => {
         cardWithContent("regular text on a card")
     )
 }
+
+export const CardWithLinkAltTheme = () => {
+    return (
+        <ThemeContext palette={altTheme}>
+            {
+                cardWithContent(
+                    (<a href="#" onClick={() => {
+                        return false
+                    }} aria-label="A useful link description goes here">
+                        Some interesting link text
+                    </a>),
+                    "https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero.jpg",
+                )
+            }
+        </ThemeContext>        
+    )
+}
+
+
+
