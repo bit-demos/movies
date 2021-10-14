@@ -10,7 +10,7 @@
     /**
      * the name of the component workspace. used for development purposes.
      **/
-    "name": "harmony-demo-movies",
+    "name": "Movies Bit Example Project",
     /**
      * set the icon to be shown on the Bit server.
      **/
@@ -90,16 +90,32 @@
     "extensions": {
       "teambit.harmony/aspect": {}
     },
+    // "{movies/**}":{
+    //   "teambit.dependencies/dependency-resolver": {
+    //     "policy": {
+    //       "dependencies": {
+    //         "@learn-bit-react/movies.context.api-context-provider": "-"
+    //       },
+    //       "devDependencies": {
+    //         "@learn-bit-react/movies.context.api-context-provider": "-"
+    //       },
+    //       "peerDependencies": {
+    //         "@learn-bit-react/movies.context.api-context-provider": "latest"
+    //       }
+    //     }
+    //   }
+    // },
     "{movies/**}, {pages/**}, !{movies/context/**}": {
       "learn-bit-react.movies/extensions/with-preview-react": {},
-      "teambit.react/react": "-"
+      "teambit.react/react": "-",
       // "teambit.dependencies/dependency-resolver": {
       //   "policy": {
       //     "dependencies": {
-      //       "@learn-bit-react/movies.movies.context.movies-api-context": "-"
+      //       "@learn-bit-react/movies.context.api-context-provider": "-",
+
       //     },
       //     "devDependencies": {
-      //       "@learn-bit-react/movies.movies.context.movies-api-context": "-"
+      //       "@learn-bit-react/movies.context.api-context-provider": "-"
       //     }
       //   }
       // }
