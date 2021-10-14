@@ -9,22 +9,25 @@ import styles from "./search-box-with-button.module.scss";
 export type SearchBoxWithButtonProps = {
     buttonText?: string,
     inputPlaceholder?: string,
-    onClicked?: any;
+    onSubmit?: any;
 }
 
-export const SearchBoxWithButton = ({onClicked, buttonText, inputPlaceholder}: SearchBoxWithButtonProps) => {
+export const SearchBoxWithButton = ({onSubmit, buttonText, inputPlaceholder}: SearchBoxWithButtonProps) => {
 
     const [inputValue, setInputValue] = useState('');
 
-    const handleClick = () => {
-        onClicked && onClicked(inputValue);
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        onSubmit && onSubmit(inputValue);
     }
 
     return (
         <div className={cs(styles.container)}>
-            <div className={cs(
-                styles.search
-            )}>
+            <form 
+                className={cs(styles.search)}
+                onSubmit={e => handleSubmit(e)}
+            >
                 <Input
                     className={cs(styles.input)}
                     onInput={e => setInputValue(e.currentTarget.value)}
@@ -33,9 +36,10 @@ export const SearchBoxWithButton = ({onClicked, buttonText, inputPlaceholder}: S
                     onChange={() => {
                     }}
                 />
-                <PrimaryButton type="submit" className={cs(styles.button)}
-                               onClick={() => handleClick()}>{buttonText || "Submit"}</PrimaryButton>
-            </div>
+                <PrimaryButton type="submit" className={cs(styles.button)}>
+                    {buttonText || "Submit"}
+                </PrimaryButton>
+            </form>
 
         </div>
     )
