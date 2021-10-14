@@ -26,16 +26,28 @@ export class WithPreviewReactMain {
         react.overrideJestConfig(jestConfig),
         react.overrideDependencies({
           dependencies: {
-            '@learn-bit-react/movies.movies.context.movies-api-context': '-'
+            // '@learn-bit-react/movies.context.api-context-provider': '-',
+            '@learn-bit-react/movies.movies.context.movies-api-context': '-',
+            // '@learn-bit-react/movies.utils.hooks.api-hook-factory': '-'
           },
           devDependencies: {
-            '@learn-bit-react/movies.movies.context.movies-api-context': '-'
+            // '@learn-bit-react/movies.context.api-context-provider': '-',
+            '@learn-bit-react/movies.movies.context.movies-api-context': '-',
+            // '@learn-bit-react/movies.utils.hooks.api-hook-factory': '-'
           },
           peerDependencies: {
+            // '@learn-bit-react/movies.context.api-context-provider': {
+            //   version: 'latest',
+            //   resolveFromEnv: true,
+            // },
             '@learn-bit-react/movies.movies.context.movies-api-context': {
               version: 'latest',
               resolveFromEnv: true,
             },
+            // '@learn-bit-react/movies.utils.hooks.api-hook-factory': {
+            //   version: 'latest',
+            //   resolveFromEnv: true,
+            // },
           },
         })
       // Add overrides here via envs API function as defined above
