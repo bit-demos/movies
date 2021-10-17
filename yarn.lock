@@ -51,7 +51,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.10.3, @babel/runtime@npm:^7.12.5":
+"@babel/runtime@npm:^7.1.2, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.10.3, @babel/runtime@npm:^7.12.1, @babel/runtime@npm:^7.12.5":
   version: 7.15.4
   resolution: "@babel/runtime@npm:7.15.4::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40babel%2Fruntime%2F-%2Fruntime-7.15.4.tgz"
   dependencies:
@@ -83,6 +83,33 @@ __metadata:
     "@types/yargs": ^16.0.0
     chalk: ^4.0.0
   checksum: 0d34189874354a63bc80eeb99da75078ea8a65599c6cd0b937cf1909fc9d490f99adf5aa32ca5a67735496f131491f323b750983d471ecbbcd3e3fec618b01df
+  languageName: node
+  linkType: hard
+
+"@learn-bit-react/base-ui.styles.button@npm:0.0.9":
+  version: 0.0.9
+  resolution: "@learn-bit-react/base-ui.styles.button@npm:0.0.9::__archiveUrl=https%3A%2F%2Fnode.bit.dev%2F%40learn-bit-react%2Fbase-ui.styles.button%2F-%2F%40learn-bit-react-base-ui.styles.button-0.0.9.tgz"
+  dependencies:
+    core-js: ^3.0.0
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  checksum: 4794b3ee072a502519db2f4ab74201968cd1cae107d0de3d5c28bd00bff5d4a053b8fc351c9976538be295c5dfaa4bca94f8664bb3affac68a06dd90791bf2eb
+  languageName: node
+  linkType: hard
+
+"@learn-bit-react/base-ui.ui.link@npm:1.0.16":
+  version: 1.0.16
+  resolution: "@learn-bit-react/base-ui.ui.link@npm:1.0.16::__archiveUrl=https%3A%2F%2Fnode.bit.dev%2F%40learn-bit-react%2Fbase-ui.ui.link%2F-%2F%40learn-bit-react-base-ui.ui.link-1.0.16.tgz"
+  dependencies:
+    "@learn-bit-react/base-ui.styles.button": 0.0.9
+    "@teambit/ui.react-router.link": 0.0.368
+    classnames: 2.3.1
+    core-js: ^3.0.0
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  checksum: fb6b7b86c97d17926a872fcda55e271d41d8cf28adedd5913d0cc4f863fd17bea7b809ef67803c460c54ccd3b8f14f226fe93c3f61b698d8451160cd4cce0f91
   languageName: node
   linkType: hard
 
@@ -235,6 +262,18 @@ __metadata:
     react: ^16.8.0 || ^17.0.0
     react-dom: ^16.8.0 || ^17.0.0
   checksum: f53b20ba285e678764bc9bd40991d18b0bfab8fe6b4f86385d9cb99f98336ff3d37d50c3c1b3e38a0822a5a57646566edd06369c5e2c54fb85ad70cb25baf6e7
+  languageName: node
+  linkType: hard
+
+"@teambit/base-ui.routing.native-link@npm:0.0.1":
+  version: 0.0.1
+  resolution: "@teambit/base-ui.routing.native-link@npm:0.0.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40teambit%2Fbase-ui.routing.native-link%2F-%2Fbase-ui.routing.native-link-0.0.1.tgz"
+  dependencies:
+    core-js: ^3.0.0
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  checksum: 970c3574029eceb9030a0c746b1764b0970d8e0bf30ea6238bba6eca828d53e814b81f311d867fdf2d3821b9bb6156df5a457818300407a3d2c3c1e725401765
   languageName: node
   linkType: hard
 
@@ -392,6 +431,36 @@ __metadata:
     reflect-metadata: ^0.1.13
     user-home: ^2.0.0
   checksum: b30f3c9982d94872314b4a6b7c79b5baf212898b6672bdd3fd256a78a946ce306dae0c5fc14bbee2c480020e52ee4552a0388f96adb6283fff9eca65697607b7
+  languageName: node
+  linkType: hard
+
+"@teambit/ui.react-router.link-anchor@npm:0.0.4":
+  version: 0.0.4
+  resolution: "@teambit/ui.react-router.link-anchor@npm:0.0.4::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40teambit%2Fui.react-router.link-anchor%2F-%2Fui.react-router.link-anchor-0.0.4.tgz"
+  dependencies:
+    core-js: ^3.0.0
+    url-join: 4.0.1
+  peerDependencies:
+    "@teambit/legacy": 1.0.85
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  checksum: ed1c50a166081c2619c5d06963f3117382d125410b4f93d83c3f9371f7bb1db3b595a6c69df9653da5a10da52670e28cab84e4083b152c72a6d734de78c8ea38
+  languageName: node
+  linkType: hard
+
+"@teambit/ui.react-router.link@npm:0.0.368":
+  version: 0.0.368
+  resolution: "@teambit/ui.react-router.link@npm:0.0.368::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40teambit%2Fui.react-router.link%2F-%2Fui.react-router.link-0.0.368.tgz"
+  dependencies:
+    "@teambit/base-ui.routing.native-link": 0.0.1
+    "@teambit/ui.react-router.link-anchor": 0.0.4
+    core-js: ^3.0.0
+    react-router-dom: 5.2.0
+  peerDependencies:
+    "@teambit/legacy": 1.0.85
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  checksum: 4d7ac3bc2640f7894c77df0e5fac70229121bff9d18daa7650d18444c72cd9e1d1795fd96ace17b55ae3c6821b52a70e86809972ab109ce4c5e84b94ce60922d
   languageName: node
   linkType: hard
 
@@ -719,7 +788,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"classnames@npm:*, classnames@npm:^2.2.6":
+"classnames@npm:*, classnames@npm:2.3.1, classnames@npm:^2.2.6":
   version: 2.3.1
   resolution: "classnames@npm:2.3.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fclassnames%2F-%2Fclassnames-2.3.1.tgz"
   checksum: 14db8889d56c267a591f08b0834989fe542d47fac659af5a539e110cc4266694e8de86e4e3bbd271157dbd831361310a8293e0167141e80b0f03a0f175c80960
@@ -968,6 +1037,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"history@npm:^4.9.0":
+  version: 4.10.1
+  resolution: "history@npm:4.10.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fhistory%2F-%2Fhistory-4.10.1.tgz"
+  dependencies:
+    "@babel/runtime": ^7.1.2
+    loose-envify: ^1.2.0
+    resolve-pathname: ^3.0.0
+    tiny-invariant: ^1.0.2
+    tiny-warning: ^1.0.0
+    value-equal: ^1.0.1
+  checksum: addd84bc4683929bae4400419b5af132ff4e4e9b311a0d4e224579ea8e184a6b80d7f72c55927e4fa117f69076a9e47ce082d8d0b422f1a9ddac7991490ca1d0
+  languageName: node
+  linkType: hard
+
+"hoist-non-react-statics@npm:^3.1.0":
+  version: 3.3.2
+  resolution: "hoist-non-react-statics@npm:3.3.2::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fhoist-non-react-statics%2F-%2Fhoist-non-react-statics-3.3.2.tgz"
+  dependencies:
+    react-is: ^16.7.0
+  checksum: b1538270429b13901ee586aa44f4cc3ecd8831c061d06cb8322e50ea17b3f5ce4d0e2e66394761e6c8e152cd8c34fb3b4b690116c6ce2bd45b18c746516cb9e8
+  languageName: node
+  linkType: hard
+
 "input-d92b67@workspace:components/base-ui/input":
   version: 0.0.0-use.local
   resolution: "input-d92b67@workspace:components/base-ui/input"
@@ -1062,7 +1154,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"loose-envify@npm:^1.1.0":
+"loose-envify@npm:^1.1.0, loose-envify@npm:^1.2.0, loose-envify@npm:^1.3.1, loose-envify@npm:^1.4.0":
   version: 1.4.0
   resolution: "loose-envify@npm:1.4.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Floose-envify%2F-%2Floose-envify-1.4.0.tgz"
   dependencies:
@@ -1089,6 +1181,19 @@ __metadata:
   bin:
     lz-string: bin/bin.js
   checksum: 54e31238a61a84d8f664d9860a9fba7310c5b97a52c444f80543069bc084815eff40b8d4474ae1d93992fdf6c252dca37cf27f6adbeb4dbc3df2f3ac773d0e61
+  languageName: node
+  linkType: hard
+
+"mini-create-react-context@npm:^0.4.0":
+  version: 0.4.1
+  resolution: "mini-create-react-context@npm:0.4.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fmini-create-react-context%2F-%2Fmini-create-react-context-0.4.1.tgz"
+  dependencies:
+    "@babel/runtime": ^7.12.1
+    tiny-warning: ^1.0.3
+  peerDependencies:
+    prop-types: ^15.0.0
+    react: ^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
+  checksum: f8cb2c7738aac355fe9ce7e8425f371b7fa90daddd5133edda4ccfdc18c49043b2ec04be6f3abf09b60a0f52549d54f158d5bfd81cdfb1a658531e5b9fe7bc6a
   languageName: node
   linkType: hard
 
@@ -1123,6 +1228,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "movies-api-context-ae4c6d@workspace:components/movies/context/movies-api-context"
   peerDependencies:
+    "@learn-bit-react/movies.context.api-context-provider": latest
     react: ^16.8.0 || ^17.0.0
     react-dom: ^16.8.0 || ^17.0.0
   languageName: unknown
@@ -1132,6 +1238,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "movies-favourites-context-2c09f8@workspace:components/movies/context/movies-favourites-context"
   peerDependencies:
+    "@learn-bit-react/movies.context.api-context-provider": latest
     react: ^16.8.0 || ^17.0.0
     react-dom: ^16.8.0 || ^17.0.0
   languageName: unknown
@@ -1213,6 +1320,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"prop-types@npm:^15.6.2":
+  version: 15.7.2
+  resolution: "prop-types@npm:15.7.2::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fprop-types%2F-%2Fprop-types-15.7.2.tgz"
+  dependencies:
+    loose-envify: ^1.4.0
+    object-assign: ^4.1.1
+    react-is: ^16.8.1
+  checksum: 5eef82fdda64252c7e75aa5c8cc28a24bbdece0f540adb60ce67c205cf978a5bd56b83e4f269f91c6e4dcfd80b36f2a2dec24d362e278913db2086ca9c6f9430
+  languageName: node
+  linkType: hard
+
 "react-dom@npm:^16.13.1 || ^17.0.0":
   version: 17.0.2
   resolution: "react-dom@npm:17.0.2::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Freact-dom%2F-%2Freact-dom-17.0.2.tgz"
@@ -1223,6 +1341,13 @@ __metadata:
   peerDependencies:
     react: 17.0.2
   checksum: 1c1eaa3bca7c7228d24b70932e3d7c99e70d1d04e13bb0843bbf321582bc25d7961d6b8a6978a58a598af2af496d1cedcfb1bf65f6b0960a0a8161cb8dab743c
+  languageName: node
+  linkType: hard
+
+"react-is@npm:^16.6.0, react-is@npm:^16.7.0, react-is@npm:^16.8.1":
+  version: 16.13.1
+  resolution: "react-is@npm:16.13.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Freact-is%2F-%2Freact-is-16.13.1.tgz"
+  checksum: f7a19ac3496de32ca9ae12aa030f00f14a3d45374f1ceca0af707c831b2a6098ef0d6bdae51bd437b0a306d7f01d4677fcc8de7c0d331eb47ad0f46130e53c5f
   languageName: node
   linkType: hard
 
@@ -1243,6 +1368,43 @@ __metadata:
     react: ">=16.8.2"
     react-dom: ">=16.8.2"
   checksum: 495170411cb69a0db3570e733f8bcc77a8fc404fc7b24a36ce4bc731324de957fcd04b5e0838823c0220d5396e899293d355c6d8a6b97c7c3d8f6e17259f9c1d
+  languageName: node
+  linkType: hard
+
+"react-router-dom@npm:5.2.0":
+  version: 5.2.0
+  resolution: "react-router-dom@npm:5.2.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Freact-router-dom%2F-%2Freact-router-dom-5.2.0.tgz"
+  dependencies:
+    "@babel/runtime": ^7.1.2
+    history: ^4.9.0
+    loose-envify: ^1.3.1
+    prop-types: ^15.6.2
+    react-router: 5.2.0
+    tiny-invariant: ^1.0.2
+    tiny-warning: ^1.0.0
+  peerDependencies:
+    react: ">=15"
+  checksum: 98d2d35f9540ac4a3c14dc023623fc8411a6a6338e95d726370e07b27c3bc6e854516537c8e3f9ad2483c4bbd579ba28cce9aff843a19fe8ebff663318886335
+  languageName: node
+  linkType: hard
+
+"react-router@npm:5.2.0":
+  version: 5.2.0
+  resolution: "react-router@npm:5.2.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Freact-router%2F-%2Freact-router-5.2.0.tgz"
+  dependencies:
+    "@babel/runtime": ^7.1.2
+    history: ^4.9.0
+    hoist-non-react-statics: ^3.1.0
+    loose-envify: ^1.3.1
+    mini-create-react-context: ^0.4.0
+    path-to-regexp: ^1.7.0
+    prop-types: ^15.6.2
+    react-is: ^16.6.0
+    tiny-invariant: ^1.0.2
+    tiny-warning: ^1.0.0
+  peerDependencies:
+    react: ">=15"
+  checksum: 6fc908729110a65a5676a9e41333e0f511a3c0ff84c93c0dc704330cf3e02124c93aaeab8031b0e2c71712390d9278fff848eeebfbdda36dca3201142f309973
   languageName: node
   linkType: hard
 
@@ -1284,11 +1446,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"resolve-pathname@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "resolve-pathname@npm:3.0.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fresolve-pathname%2F-%2Fresolve-pathname-3.0.0.tgz"
+  checksum: 6147241ba42c423dbe83cb067a2b4af4f60908c3af57e1ea567729cc71416c089737fe2a73e9e79e7a60f00f66c91e4b45ad0d37cd4be2d43fec44963ef14368
+  languageName: node
+  linkType: hard
+
 "root-workspace-0b6124@workspace:.":
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
     "@babel/runtime": 7.12.18
+    "@learn-bit-react/base-ui.ui.link": 1.0.16
     "@teambit/base-ui.elements.dots-loader": ^1.0.0
     "@teambit/base-ui.elements.image": ^1.0.0
     "@teambit/base-ui.elements.label": 0.6.11
@@ -1393,6 +1563,20 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"tiny-invariant@npm:^1.0.2":
+  version: 1.1.0
+  resolution: "tiny-invariant@npm:1.1.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Ftiny-invariant%2F-%2Ftiny-invariant-1.1.0.tgz"
+  checksum: 27d29bbb9e1d1d86e25766711c28ad91af6d67c87d561167077ac7fbce5212b97bbfe875e70bc369808e075748c825864c9b61f0e9f8652275ec86bcf4dcc924
+  languageName: node
+  linkType: hard
+
+"tiny-warning@npm:^1.0.0, tiny-warning@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "tiny-warning@npm:1.0.3::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Ftiny-warning%2F-%2Ftiny-warning-1.0.3.tgz"
+  checksum: da62c4acac565902f0624b123eed6dd3509bc9a8d30c06e017104bedcf5d35810da8ff72864400ad19c5c7806fc0a8323c68baf3e326af7cb7d969f846100d71
+  languageName: node
+  linkType: hard
+
 "type-detect@npm:4.0.8, type-detect@npm:^4.0.0, type-detect@npm:^4.0.5, type-detect@npm:^4.0.8":
   version: 4.0.8
   resolution: "type-detect@npm:4.0.8::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Ftype-detect%2F-%2Ftype-detect-4.0.8.tgz"
@@ -1404,6 +1588,13 @@ __metadata:
   version: 0.1.2
   resolution: "universalify@npm:0.1.2::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Funiversalify%2F-%2Funiversalify-0.1.2.tgz"
   checksum: 40cdc60f6e61070fe658ca36016a8f4ec216b29bf04a55dce14e3710cc84c7448538ef4dad3728d0bfe29975ccd7bfb5f414c45e7b78883567fb31b246f02dff
+  languageName: node
+  linkType: hard
+
+"url-join@npm:4.0.1":
+  version: 4.0.1
+  resolution: "url-join@npm:4.0.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Furl-join%2F-%2Furl-join-4.0.1.tgz"
+  checksum: f74e868bf25dbc8be6a8d7237d4c36bb5b6c62c72e594d5ab1347fe91d6af7ccd9eb5d621e30152e4da45c2e9a26bec21390e911ab54a62d4d82e76028374ee5
   languageName: node
   linkType: hard
 
@@ -1422,6 +1613,13 @@ __metadata:
   dependencies:
     os-homedir: ^1.0.0
   checksum: a3329faa959fcd9e3e01a03347ca974f7f6b8896e6a634f29c61d8d5b61557d853c6fc5a6dff1a28e2da85b400d0e4490368a28de452ba8c41a2bf3a92cb110a
+  languageName: node
+  linkType: hard
+
+"value-equal@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "value-equal@npm:1.0.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fvalue-equal%2F-%2Fvalue-equal-1.0.1.tgz"
+  checksum: bb7ae1facc76b5cf8071aeb6c13d284d023fdb370478d10a5d64508e0e6e53bb459c4bbe34258df29d82e6f561f874f0105eba38de0e61fe9edd0bdce07a77a2
   languageName: node
   linkType: hard
 

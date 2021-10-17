@@ -34,6 +34,7 @@
     "packageManager": "teambit.dependencies/yarn",
     "policy": {
       "dependencies": {
+        "@learn-bit-react/base-ui.ui.link": "1.0.16",
         "@teambit/base-ui.elements.dots-loader": "^1.0.0",
         "@teambit/base-ui.elements.image": "^1.0.0",
         "@teambit/base-ui.elements.label": "^1.0.0",
@@ -90,35 +91,9 @@
     "extensions": {
       "teambit.harmony/aspect": {}
     },
-    // "{movies/**}":{
-    //   "teambit.dependencies/dependency-resolver": {
-    //     "policy": {
-    //       "dependencies": {
-    //         "@learn-bit-react/movies.context.api-context-provider": "-"
-    //       },
-    //       "devDependencies": {
-    //         "@learn-bit-react/movies.context.api-context-provider": "-"
-    //       },
-    //       "peerDependencies": {
-    //         "@learn-bit-react/movies.context.api-context-provider": "latest"
-    //       }
-    //     }
-    //   }
-    // },
-    "{movies/**}, {pages/**}, !{movies/context/**}": {
+    "{movies/**}, {pages/**}, !{movies/context/**}, {utils/hooks/**}": {
       "learn-bit-react.movies/extensions/with-preview-react": {},
-      "teambit.react/react": "-",
-      // "teambit.dependencies/dependency-resolver": {
-      //   "policy": {
-      //     "dependencies": {
-      //       "@learn-bit-react/movies.context.api-context-provider": "-",
-
-      //     },
-      //     "devDependencies": {
-      //       "@learn-bit-react/movies.context.api-context-provider": "-"
-      //     }
-      //   }
-      // }
+      "teambit.react/react": "-"
     },
     "{base-ui/**}": {
       "teambit.react/react": {}
