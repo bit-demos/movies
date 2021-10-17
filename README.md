@@ -9,11 +9,9 @@ The movies repo is a react-based demo project showcasing a wide variety of compo
 1. css-only components
 1. A custom development environment, based on bit's core `react` env - including overrides of webpace, ts, and jest configurations, as well as some env-defined dependency configurations for components using the env.
 
-<img width="1124" alt="CleanShot 2021-08-10 at 23 26 40@2x" src="https://user-images.githubusercontent.com/13063165/128937364-5c814d60-7538-4e00-8571-31ad3020bae6.png">
-
 Exported components can be seen [here](https://bit.dev/learn-bit-react/movies)
 
-<img width="1788" alt="CleanShot 2021-08-10 at 19 48 13@2x" src="https://user-images.githubusercontent.com/13063165/128909487-9f256996-d321-4fac-b5d6-836daa34bb4e.png">
+<img width="1788" alt="CleanShot 2021-08-10 at 19 48 13@2x" src="https://user-images.githubusercontent.com/67269267/137623025-fe671ee8-a386-4ada-9704-50b4ed6de0fa.png">
 
 If you would like to import(clone) the project to take it for a test run make sure you have [bit installed](https://harmony-docs.bit.dev/getting-started/installing-bit).
 
