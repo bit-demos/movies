@@ -17,7 +17,7 @@ export const MoviesSearch = () => {
 
   return (
   <div className={styles["movies-search-wrapper"]}>    
-    <SearchBoxWithButton onClicked={onSearchClicked} inputPlaceholder="search term" buttonText="Search Movies"/>
+    <SearchBoxWithButton onSubmit={onSearchClicked} inputPlaceholder="search term" buttonText="Search Movies"/>
     {isLoading ? 
     // <DotsLoader />
     'Loading...' : error ? error : <MovieCardGrid list={movies} /> }

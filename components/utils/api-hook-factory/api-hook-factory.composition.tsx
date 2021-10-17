@@ -1,41 +1,14 @@
-import React, { useEffect } from 'react';
-import { Label } from '@teambit/base-ui.elements.label';
-import { Movie, MovieFromApi, MovieResponse } from '@learn-bit-react/movies.models.movie';
-import { ContextResource } from '@learn-bit-react/movies.context.api-context-provider';
-import { ApiHookFactory } from './api-hook-factory';
+import React from 'react';
+import { MemoryRouter } from 'react-router';
+import { Link } from '@learn-bit-react/base-ui.ui.link'
 
-// implement concrete hook from the factory
-function exampleMoviesHook(){
-    const apiCallConfig = (searchStr: string): ContextResource<MovieResponse> => ({
-        params: {
-        s: searchStr
-        }
-    });
-
-    const processData = (data): Movie[] =>  {
-        return data.Search && data.Search.length ? data.Search.map(
-        (m: MovieFromApi) => Movie.fromApiObject(m)
-    ) : [];
-    }
-
-    return ApiHookFactory(apiCallConfig, processData);
-}
-
-export const BasicFactoryProducedHookMovies = () => {
-
-    // use new hook
-    const [getMovies, movies, isLoading, error] = exampleMoviesHook();
-
-    useEffect(() => {
-        getMovies("dream");
-    }, [])
-
+// Link to example component which is a concrete implementation of this factory
+export const LinkToUseSearchMovie = () => {
     return (
-        <div style={{display:"flex", flexDirection:"column", width:300}}>
-            <div>Search Movies with our new Movies Hook - results of "dream"</div>
-            {!isLoading && movies && movies.map(m => {
-                return (<Label key={m.imdbID} style={{maxWidth:300, marginBottom:10}}>{m.title}</Label>)
-            })}
-        </div>
+        <MemoryRouter>
+
+            Please see the <Link href="https://bit.dev/learn-bit-react/movies/movies/data/hooks/use-search-movies" external>Use Search Movies component</Link> for
+            a full composition of this component.
+        </MemoryRouter>
     )
-};
+}
