@@ -7,7 +7,7 @@ The movies repo is a react-based demo project showcasing a wide variety of compo
 1. React Context
 1. including a generic React Context Factory
 1. css-only components
-1. A custom development environment, based on bit's core `react` env - including overrides of webpace, ts, and jest configurations, as well as some env-defined dependency configurations for components using the env.
+1. A custom development environment, based on bit's core `react` env - including overrides of webpack, ts, and jest configurations, as well as some env-defined dependency configurations for components using the env.
 
 Exported components can be seen [here](https://bit.dev/learn-bit-react/movies)
 
