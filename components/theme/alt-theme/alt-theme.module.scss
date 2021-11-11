@@ -1,29 +1,54 @@
 .altTheme {
-		color: orange;
-		// --text-highlight: #{$d60};
-		// --text-color: #{$d50};
-		// --text-muted: #{$d40};
-		// --steel-color: #{$d30};
-		
-		--base-color: pink;
-		// --base-highlight: #{$p60};
-	
-		// --border-color: #{$d10};
-		// --bg-color: #{$w10};
-		// --separator-color: #{$d20};
-		
-		// --muted-color: #{$p20}; //unsettled
-		// --muted-highlight: #{$p30}; //unsettled
-		
-		// --error-color: #{$r50};
-		// --error-highlight: #{$r60};
-		// --bg-error: #{$r20};
-	
-		// --bg-bedrock: #{$w10};  // i.e. <body/> background
-		// --bg-base: #{$w10};     // e.g. navigation
-		// --bg-layer: #{$w10};    // e.g. card
-		// --bg-crust: #{$w10};    // e.g. tooltip    
-		--bg-topping: turquoise;  // e.g. button, input, etc
-		--bg-topping-highlight: limegreen;
-		// --bg-dent: #{$w20};
+	color: orange;
+	--bit-text-color: orange;
+	--bit-text-color-heavy: darkgrey;
+	// --bit-text-color-light: #{$d40};
+	// --bit-text-inactive: #{$d20};
+	// --bit-text-inactive-heavy: #{$d30};
+
+	// --bit-border-color: #{$d20};
+	// --bit-border-color-heavy: #{$d30};
+	// --bit-border-color-light: #{$d15};
+	// --bit-border-color-lightest: #{$d10};
+
+	// -- accent -- //
+	--bit-accent-color: turquoise;
+	--bit-accent-heavy: limegreen;
+	// --bit-accent-light: #{$p40};
+	// --bit-accent-text: #{$p50};
+	// --bit-accent-text-heavy: #{$p60};
+	// --bit-text-on-accent: #{$w10};
+	// --bit-accent-bg: #{$p20};
+	// --bit-accent-bg-heavy: #{$p30};
+
+	// -- background -- //
+	// // higher number = more important, and 'closer' to the user.
+	// --bit-bg-01: #{$w10};
+	// --bit-bg-03: #{$w20};
+	// --bit-bg-05: #{$d10};
+	// --bit-bg-07: #{$d15};
+	// --bit-bg-09: #{$d20};
+	// --bit-bg-11: #{$d30};
+
+	// intractable item
+	--bit-bg-color: pink;	// when resting
+	--bit-bg-heavy: indigo;	// when hovering, focus
+	// --bit-bg-heaviest: #{$d10}; // when active (clicked)
+
+	// --bit-bg-bedrock: #{$w10}; // i.e. <body/> background
+	// --bit-bg-navigation: #{$w20}; // i.e. <body/> background
+	// --bit-bg-overlay: #{$w10}; // e.g. button, input, etc
+	// --bit-bg-modal: #{$w10}; // e.g. button, input, etc
+	// --bit-bg-tooltip: #{$w10}; // e.g. button, input, etc
+	// --bit-bg-tooltip-heavy: #{$w20};
+	// --bit-bg-dent: #{$w20};
+
+	// -- error -- //
+	// might replace with 'error' theme
+	// --bit-error-color: #{$r50};
+	// --bit-error-heavy: #{$r60};
+	// --bit-error-light: #{$r40};
+	// --bit-error-bg: #{$r20};
+	// --bit-error-bg-heavy: #{$r30};
 }
+
