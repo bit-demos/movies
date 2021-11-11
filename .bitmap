@@ -11,13 +11,13 @@
 {
     "base-ui/button": {
         "scope": "learn-bit-react.movies",
-        "version": "0.0.2",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "components/base-ui/button"
     },
     "base-ui/card": {
         "scope": "learn-bit-react.movies",
-        "version": "0.0.2",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "components/base-ui/card"
     },
@@ -29,91 +29,91 @@
     },
     "base-ui/search-box-with-button": {
         "scope": "learn-bit-react.movies",
-        "version": "0.0.2",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "components/base-ui/searchBoxWithButton"
     },
     "context/api-context-provider": {
         "scope": "learn-bit-react.movies",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "components/context/api-context-provider"
     },
     "context/favourites-context": {
         "scope": "learn-bit-react.movies",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "components/context/favourites-context"
     },
     "extensions/with-preview-react": {
         "scope": "learn-bit-react.movies",
-        "version": "0.0.8",
+        "version": "0.0.10",
         "mainFile": "index.ts",
         "rootDir": "extensions/withPreviewReact"
     },
     "models/movie": {
         "scope": "learn-bit-react.movies",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "components/models/movie"
     },
     "movies/context/movies-api-context": {
         "scope": "learn-bit-react.movies",
-        "version": "0.0.3",
+        "version": "0.0.5",
         "mainFile": "index.tsx",
         "rootDir": "components/movies/context/movies-api-context"
     },
     "movies/context/movies-favourites-context": {
         "scope": "learn-bit-react.movies",
-        "version": "0.0.4",
+        "version": "0.0.6",
         "mainFile": "index.ts",
         "rootDir": "components/movies/context/movies-favourites-context"
     },
     "movies/data/hooks/use-search-movies": {
         "scope": "learn-bit-react.movies",
-        "version": "0.0.12",
+        "version": "0.0.14",
         "mainFile": "index.ts",
         "rootDir": "components/movies/data/hooks/use-search-movies"
     },
     "movies/movies-search": {
         "scope": "learn-bit-react.movies",
-        "version": "0.0.12",
+        "version": "0.0.14",
         "mainFile": "index.ts",
         "rootDir": "components/movies/movies-search"
     },
     "movies/ui/movie-card": {
         "scope": "learn-bit-react.movies",
-        "version": "0.0.8",
+        "version": "0.0.10",
         "mainFile": "index.ts",
         "rootDir": "components/movies/ui/movie-card"
     },
     "movies/ui/movie-card-grid": {
         "scope": "learn-bit-react.movies",
-        "version": "0.0.8",
+        "version": "0.0.10",
         "mainFile": "index.ts",
         "rootDir": "components/movies/ui/movie-card-grid"
     },
     "pages/favourites": {
         "scope": "learn-bit-react.movies",
-        "version": "0.0.12",
+        "version": "0.0.14",
         "mainFile": "index.ts",
         "rootDir": "components/pages/favourites"
     },
     "theme/alt-theme": {
         "scope": "learn-bit-react.movies",
-        "version": "0.0.2",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "components/theme/alt-theme"
     },
     "theme/theme-context": {
         "scope": "learn-bit-react.movies",
-        "version": "0.0.2",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "components/theme/theme-context"
     },
     "utils/hooks/api-hook-factory": {
         "scope": "learn-bit-react.movies",
-        "version": "0.0.6",
+        "version": "0.0.8",
         "mainFile": "index.ts",
         "rootDir": "components/utils/api-hook-factory"
     },
