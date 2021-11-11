@@ -3,7 +3,15 @@ description: A hook for searching movies from www.omdbapi.com's API. The base UR
 labels: ['react', 'typescript', 'movies', 'search', 'hooks']
 ---
 
-The useSearchMovies hook enables searching through the www.omdbapi.com's movies database via their API.
+The useSearchMovies hook demonstrates a ***react hook as a bit component***.   
+It makes use of an api hook factory component, to enable quick production of this
+ api hook, in which all that's required is   
+ a) on the provider side, to set up the base url and any fixed parameters for the api call  
+ b) on the consumer side, to set up any dynamic parameters, as well as a function to process the data that returns from the api call.
+
+
+This specific api hook enables searching through the www.omdbapi.com's movies database via their API, and returns data in the form of 
+our [internal Movies data model](@learn-bit-react/movies.models.movie).
 
 The hook returns four items for managaing the API calls:
 1. getMovies - the function for actually searching movies
