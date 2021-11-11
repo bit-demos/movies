@@ -49,6 +49,8 @@
         "@teambit/base-ui.theme.size-definition": "^1.0.0",
         "@teambit/base-ui.theme.theme-provider": "^1.0.0",
         "@teambit/dependencies.modules.packages-excluder": "0.0.9",
+        "@teambit/design.ui.buttons.button": "1.9.52",
+        "@teambit/design.ui.input.text": "0.1.5",
         "@testing-library/react": "^10.4.7",
         "@types/classnames": "^2.2.11",
         "@types/react": "16.9.43 || ^17.0.0",
