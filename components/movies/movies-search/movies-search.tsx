@@ -1,6 +1,6 @@
 // @ts-ignore
 import React from 'react';
-// import { DotsLoader } from '@teambit/base-ui.elements.dots-loader';
+import { DotsLoader } from '@teambit/base-ui.elements.dots-loader';
 import { SearchBoxWithButton } from '@learn-bit-react/movies.base-ui.search-box-with-button';
 import { MovieCardGrid } from '@learn-bit-react/movies.movies.ui.movie-card-grid';
 import { useSearchMovies } from '@learn-bit-react/movies.movies.data.hooks.use-search-movies';
@@ -19,8 +19,7 @@ export const MoviesSearch = () => {
   <div className={styles["movies-search-wrapper"]}>    
     <SearchBoxWithButton onSubmit={onSearchClicked} inputPlaceholder="search term" buttonText="Search Movies"/>
     {isLoading ? 
-    // <DotsLoader />
-    'Loading...' : error ? error : <MovieCardGrid list={movies} /> }
+    <DotsLoader /> : error ? error : <MovieCardGrid list={movies} /> }
   </div>
   )
 }
