@@ -3,6 +3,17 @@ labels: ['movies', 'model']
 description: The in-memory model for a movie object
 ---
 
+Demonstrates a useful pattern in component-driven architecture, whereby the data model is created as a component, with its own resources to best make use of the model:
+
+1. Comprehensive mock data, to best cover the full variety of data this data model supports 
+1. Conversion functions from external data models (e.g. data returned from API calls) to the unified internal data model.
+
+By using this sort of component, you ensure consistent data format across your application, with built-in ability to convert data arriving from external sources. 
+
+And the supplied mock data ensures that those using this model won't have to try to invent their own data for testing and initial integration, as it's supplied as part of 
+the data model itself - so that the person who is in the best position to know what mock data would best represent the extremes of the data model, the developer who created the
+model himself, is the one who creates that data, rather than each consumer attempting to fashion something themselves.
+
 The in-memory model contains functions to convert movie objects arriving from the server to the local model.
 
 It also contains a list of mock movies data for easy mocking of components that use movies.

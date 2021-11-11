@@ -60,6 +60,9 @@ consumer.js
     );
 ```
 
+**NOTE** The Api call will return an object of format `{ data: someData, error: someError}`. Inside `data` will be the object or data that your API call returns.  
+
+
 ### Usage example 2: Create a concrete provider to be used in the code
 
 Create a concrete usage example with pre-filled default url and parameters, with both provider and a useContext-like consumer function to be used at either end of the context.
