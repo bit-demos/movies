@@ -1,0 +1,25 @@
+---
+description: Generic favourites context for managing favourites across an application
+labels: ['context', 'favorites', 'generic']
+---
+
+#### Overview
+
+This bit component demonstrates the ability to deconstruct react context code, and create a generic factory for creating specific contexts - in this case favourites context for `TItem` type.
+
+For example, using this component you can create Favourites contexts, with all the expected functionality of a favourites context such as add/remove functions, for any type of 
+website. So with this component you could create a Movies Favourites component (or just add a context directly in your application) with Movies as `TItem`, and then also 
+create a Books Favourites for a separate book retail site or sites. 
+
+Includes functions for managing favourites:
+1. `AddToFavourites` - function for adding to the favourites 
+1. `RemoveFromFavourites` - function for removing item from the favourites
+
+Also exposes the `favourites` object for accessing the current state of the favourites data.
+
+See compositions for a usage example
+
+
+
+
+

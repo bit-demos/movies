@@ -1,7 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { SearchBoxWithButton } from '@learn-bit-react/movies.base-ui.search-box-with-button';
-import { Input } from '@learn-bit-react/movies.base-ui.input';
-import { PrimaryButton } from '@learn-bit-react/movies.base-ui.button';
 import { MovieCard } from '@learn-bit-react/movies.movies.ui.movie-card';
 import { useSearchMovies } from './index';
 
