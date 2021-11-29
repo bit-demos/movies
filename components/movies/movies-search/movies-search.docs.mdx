@@ -5,9 +5,13 @@ description: A movies search micro front end component.
 
 import { MoviesSearch } from './movies-search';
 
-The movies-search micro front-end component allow you to search for movies and display the results in a grid with their title and the poster of the movie.
+The movies-search micro front-end component allows you to search for movies and display the results in a grid with their title and the poster of the movie.
 
-It uses the [use-search-movies](https://bit.dev/teambit/movie-demo/movies/data/hooks/use-search-movies) hook for processing the search request, and displays the results using the [Movie Card Grid](https://bit.dev/dell/cet/movies/ui/movie-card-grid) UI component.
+This is a concrete example of composing together multiple component types into a single, uncluttered micro front end, with its own data fetching capabilities, via
+the api context hook component, and UI display via the Movies Card Grid component. The entire code for this component is 8 lines long (excluding import statements).
+
+It uses the [use-search-movies](https://bit.dev/learn-bit-react/movies/movies/data/hooks/use-search-movies) hook for processing the search request, 
+and displays the results using the [Movie Card Grid](https://bit.dev/learn-bit-react/movies/movies/ui/movie-card-grid) UI component.
 
 See composiions for a basic example of the MFE in action:
 
