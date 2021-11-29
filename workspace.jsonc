@@ -55,7 +55,7 @@
         "@types/classnames": "^2.2.11",
         "@types/react": "16.9.43 || ^17.0.0",
         "@types/react-dom": "16.9.10 || ^17.0.0",
-        "axios": "0.21.1",
+        "axios": "0.24.0",
         "chai": "4.3.0",
         "classnames": "2.2.6",
         "core-js": "^3.10.1",
