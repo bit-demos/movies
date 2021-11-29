@@ -1,12 +1,12 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import { PrimaryCtaButton } from '@learn-bit-react/movies.base-ui.button';
 import { Movie, getRandomMockMovie } from '@learn-bit-react/movies.models.movie';
-import { MovieFavouritesContext, MoviesFavouritesContextProvider} from './index';
+import { MoviesFavouritesContextProvider, useMoviesFavouritesContext } from './index';
 import styles from './movies-favourites-context.module.scss';
 
 
 function AddToFavouritesComponent(){
-    const context = useContext(MovieFavouritesContext);
+    const context = useMoviesFavouritesContext();
 
     function onButtonClick(){
         context.AddToFavourites(Movie.fromApiObject(getRandomMockMovie()));
@@ -20,7 +20,7 @@ function AddToFavouritesComponent(){
 }
 
 function ShowFavouritesComponent(){
-    const context = useContext(MovieFavouritesContext)
+    const context = useMoviesFavouritesContext();
     return (
         <div>
             <b>Favourites list:</b> <br />
