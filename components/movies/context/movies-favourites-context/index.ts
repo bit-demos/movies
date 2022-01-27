@@ -1,1 +1,1 @@
-export { MoviesFavouritesContextProvider, MovieFavouritesContext } from './movies-favourites-context';
+export { MoviesFavouritesContextProvider, MovieFavouritesContext, useMoviesFavouritesContext } from './movies-favourites-context';
