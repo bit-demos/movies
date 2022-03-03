@@ -66,8 +66,8 @@
       "peerDependencies": {
         "@babel/runtime": "^7.11.2",
         "@testing-library/user-event": "13.5.0",
-        "react": "^16.13.1 || ^17.0.0",
-        "react-dom": "^16.13.1 || ^17.0.0"
+        "react": "^16.18.1 || ^17.0.0",
+        "react-dom": "^16.18.1 || ^17.0.0"
       }
     },
     "packageManagerArgs": [],
@@ -78,6 +78,7 @@
     "installFromBitDevRegistry": true,
     "savePrefix": ""
   },
+
   /**
    * workspace variants allow to set different subsets of configuration for components in your workspace.
    * this is extremely useful for upgrading, aligning and building components with a
