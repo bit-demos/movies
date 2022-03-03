@@ -5,7 +5,7 @@ labels: ['design', 'system', 'css', 'theme']
 
 import cs from 'classnames';
 import { altTheme } from '@learn-bit-react/movies.theme.alt-theme';
-import { PrimaryButton } from '@teambit/base-ui.input.button';
+import Button from '@teambit/base-ui.input.button';
 import { ThemeContext } from './index';
 
 This theme context component is for wrapping component groups or even entire apps in a 'context' in which a theme is provided which acts on CSS classes for which the theme is aimed.
@@ -17,7 +17,7 @@ For instance, here is the same component with and without the theme context.
 
 ```js live
     <div>
-        <PrimaryButton >Regular theme</PrimaryButton>
+        <Button >Regular theme</Button>
     </div>
 
 ```
@@ -25,7 +25,7 @@ For instance, here is the same component with and without the theme context.
 ```js live
     <div>
         <ThemeContext palette={altTheme}>
-            <PrimaryButton>using theme defined by ThemeContext</PrimaryButton>
+            <Button>using theme defined by ThemeContext</Button>
         </ThemeContext>
     </div>
 
